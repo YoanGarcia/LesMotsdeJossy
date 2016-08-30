@@ -1,0 +1,42 @@
+/* * * * * * * * * * TOUT * * * * * * * * * */
+
+.inlineBlock {
+	display: inline-block;
+}
+
+.textcenter {
+	text-align: center;
+}
+
+/* * * * * * * * * * NAVBAR * * * * * * * * * */
+
+.backgroundNav {
+	background: url(../img/background/imgBackground.jpeg) no-repeat center center;
+	padding-bottom: 200px;
+}
+
+.containerTheme {
+	margin-top: 100px;
+}
+
+.divTheme {
+	display: inline-block;
+
+	background: red;
+	color: blue;
+	width: 200px;
+	height: 100px;
+	cursor: pointer;
+	text-align: center;
+
+	padding-top: 18px;
+	margin-top: 70px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.divTheme:hover {
+	background: blue;
+	color: red;
+	text-decoration: none;
+}
