@@ -40,3 +40,25 @@
 	color: red;
 	text-decoration: none;
 }
+
+/* * * * * * * * * * NEWS * * * * * * * * * */
+
+.slide {
+
+}
+
+/* * * * * * * * * * INFOS * * * * * * * * * */
+
+
+
+/* * * * * * * * * * CONTACT * * * * * * * * * */
+
+.contact {
+	background: green;
+}
+
+/* * * * * * * * * * FOOTER * * * * * * * * * */
+
+footer {
+	background: lightgrey;
+}
