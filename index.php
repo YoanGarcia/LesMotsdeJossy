@@ -38,64 +38,64 @@
 
             <br>
             <div class="inlineBlock textcenter containerTheme">
-                <a class="inlineblock" href="theme1.php">
+                <a class="inlineblock" href="vue/theatre.php">
                     <div class="divTheme">
-                        <h2>Thème 1</h2>
+                        <h2>Théatre<br>( a partir de 4 ans )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme2.php">
+                <a class="inlineblock" href="vue/as.php">
                     <div class="divTheme">
-                        <h2>Thème 2</h2>
+                        <h2>Accompagnement à la scolarité<br>( primaire et collège )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme3.php">
+                <a class="inlineblock" href="vue/manif.php">
                     <div class="divTheme">
-                        <h2>Thème 3</h2>
+                        <h2>Manifestations culturelles<br>( tout public )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme3.php">
+                <a class="inlineblock" href="vue/animretraite.php">
                     <div class="divTheme">
-                        <h2>Thème 4</h2>
+                        <h2>Animation en maison de retraite<br>( seniors )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme3.php">
+                <a class="inlineblock" href="vue/filkidi.php">
                     <div class="divTheme">
-                        <h2>Thème 5</h2>
+                        <h2>Filkidi<br>( 18 mois à 6 ans )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme3.php">
+                <a class="inlineblock" href="vue/reaap.php">
                     <div class="divTheme">
-                        <h2>Thème 6</h2>
+                        <h2>REAAP<br>( la famille )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme3.php">
+                <a class="inlineblock" href="vue/tap.php">
                     <div class="divTheme">
-                        <h2>Thème 7</h2>
+                        <h2>Temps d'activités périscolaires<br>( 3 à 11ans )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme3.php">
+                <a class="inlineblock" href="vue/francais.php">
                     <div class="divTheme">
-                        <h2>Thème 8</h2>
+                        <h2>Lire, écrire, parler le français<br>( enfants et adultes )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme3.php">
+                <a class="inlineblock" href="vue/animspe.php">
                     <div class="divTheme">
-                        <h2>Thème 9</h2>
+                        <h2>Animation en établissement spécialisés<br>( enfants et adultes )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme3.php">
+                <a class="inlineblock" href="vue/cocciabeille.php">
                     <div class="divTheme">
-                        <h2>Thème 10</h2>
+                        <h2>Coccinelles et abeilles<br>( mixer les enfants porteurs de handicaps et non porteurs de handicaps )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme3.php">
+                <a class="inlineblock" href="vue/pp.php">
                     <div class="divTheme">
-                        <h2>Thème 11</h2>
+                        <h2>Printemps des Poètes<br>( pour tous )</h2>
                     </div>
                 </a>
-                <a class="inlineblock" href="theme3.php">
+                <a class="inlineblock" href="vue/etpuis.php">
                     <div class="divTheme">
-                        <h2>Thème 12</h2>
+                        <h2>Et puis<br>( pour tous )</h2>
                     </div>
                 </a>
             </div>
@@ -142,36 +142,41 @@
 
     <!-- Contact -->
     <section id="contact" class="contact">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <h2>Nous contacter</h2>
 
-                <form method="POST">
-                    <label for="lastname">Nom</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Entrez votre nom">
+        <div class="container">
 
-                    <br>
-                    <label for="firstname">Prénom</label>
-                    <input type="text" name="firstname" id="firstname" placeholder="Entrez votre prénom">                    
+            <div class="col-lg-2"></div>
 
-                    <br>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Entrez votre email">
-
-                    <br>
-                    <label for="phone">Téléphone</label>
-                    <input type="email" name="email" id="email" placeholder="Entrez votre email">
-
-                    <br><br>
-                    <label for="message" class="txtgrey">Message</label><br>
-                    <textarea type="text" name="message" rows="4" cols="40" placeholder="Entrez votre message"></textarea>
-
-                    <br><br>
-                    <input type="submit" value="Envoyer" class="bouton_inscription">
-            </form>
+            <form class="form-signin col-lg-8">
+                <h2 class="form-signin-heading textcenter">Nous contacter</h2>
                 
-            </div>
+                <label for="lastname" class="sr-only">Nom</label>
+                <input type="text" id="lastname" class="form-control" placeholder="Entrez votre nom" required>
+                
+                <br>
+                <label for="firstname" class="sr-only">Prénom</label>
+                <input type="text" id="firstname" class="form-control" placeholder="Entrez votre prénom" required>
+
+                <br>
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Entrez votre email" required>
+
+                <br>
+                <label for="phone" class="sr-only">Téléphone ( facultatif )</label>
+                <input type="int" id="phone" class="form-control" placeholder="Entrez votre téléphone ( facultatif )">
+
+                <br>
+                <label for="message" class="sr-only">Message</label>
+                <textarea type="text" name="message" rows="4" cols="40" class="form-control" placeholder="Entrez votre message" required></textarea>
+
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Envoyer</button>
+            </form>
+
+        <div class="col-lg-2"></div>
+
         </div>
+
     </section>
 
     <!-- Footer -->
