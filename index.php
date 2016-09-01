@@ -151,19 +151,19 @@
                 <h2 class="form-signin-heading textcenter">Nous contacter</h2>
                 
                 <label for="lastname" class="sr-only">Nom</label>
-                <input type="text" id="lastname" class="form-control" placeholder="Entrez votre nom" required>
+                <input type="text" id="lastname" class="form-control" placeholder="Votre nom" required>
                 
                 <br>
                 <label for="firstname" class="sr-only">Prénom</label>
-                <input type="text" id="firstname" class="form-control" placeholder="Entrez votre prénom" required>
+                <input type="text" id="firstname" class="form-control" placeholder="Votre prénom" required>
 
                 <br>
                 <label for="email" class="sr-only">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Entrez votre email" required>
+                <input type="email" id="email" class="form-control" placeholder="Votre email" required>
 
                 <br>
                 <label for="phone" class="sr-only">Téléphone ( facultatif )</label>
-                <input type="int" id="phone" class="form-control" placeholder="Entrez votre téléphone ( facultatif )">
+                <input type="int" id="phone" class="form-control" placeholder="Votre téléphone ( facultatif )">
 
                 <br>
                 <label for="message" class="sr-only">Message</label>
@@ -186,8 +186,8 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Les Mots de Jossy</strong></h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>adresse</li>
-                        <li><i class="fa fa-phone-square" aria-hidden="true"></i>telephone</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>BP 12 - 33670 Sadirac</li>
+                        <li><i class="fa fa-phone-square" aria-hidden="true"></i>06 30 76 20 13</li>
                         <li><i class="fa fa-envelope-square" aria-hidden="true"></i>lesmotsdejossy@orange.fr</li>
                         </li>
                     </ul>
