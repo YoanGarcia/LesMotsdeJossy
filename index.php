@@ -145,11 +145,12 @@
     <!-- Contact -->
     <section id="contact" class="contact">
 
-        <div class="container">
+        <div class="col-lg-1"></div>
+        <div class="container col-lg-4">
 
-            <div class="col-lg-2"></div>
+<!--             <div class="col-lg-2"></div> -->
 
-            <form method="POST" class="form-signin col-lg-8">
+            <form method="POST" class="form-signin <!-- col-lg-8 -->">
                 <h2 class="form-signin-heading textcenter">Nous contacter</h2>
                 
                 <label for="lastname" class="sr-only">Nom</label>
@@ -175,9 +176,15 @@
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Envoyer</button>
             </form>
 
-        <div class="col-lg-2"></div>
+        	<div class="col-lg-2"></div>
 
         </div>
+
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 carteContact">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d90558.8426728483!2d-0.4865803908661007!3d44.82230143271088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf346fe4565aa7d48!2sMairie+de+Sadirac!5e0!3m2!1sfr!2sfr!4v1472818306674" width="850" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-1"></div>
 
     </section>
 
