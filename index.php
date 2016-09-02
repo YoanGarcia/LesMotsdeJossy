@@ -149,7 +149,7 @@
 
             <div class="col-lg-2"></div>
 
-            <form class="form-signin col-lg-8">
+            <form method="POST" class="form-signin col-lg-8">
                 <h2 class="form-signin-heading textcenter">Nous contacter</h2>
                 
                 <label for="lastname" class="sr-only">Nom</label>
