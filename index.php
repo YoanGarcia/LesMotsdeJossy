@@ -103,8 +103,9 @@
     </nav>
 
     <!-- Section News -->
-    <section>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <section id="news" class="news">
+    	<div class="col-lg-1"></div>
+        <div id="myCarousel" class="carousel slide col-lg-10" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -116,22 +117,23 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="img/photo/slide1.jpg">
+                    <img src="img/photo/slide1.jpg" class="imgSlide">
                 </div>
 
                 <div class="item">
-                    <img src="img/photo/slide2.png">
+                    <img src="img/photo/slide2.png" class="imgSlide">
                 </div>
 
                 <div class="item">
-                    <img src="img/photo/slide3.png">
+                    <img src="img/photo/slide3.png" class="imgSlide">
                 </div>
 
                 <div class="item">
-                    <img src="img/photo/slide4.jpg">
+                    <img src="img/photo/slide4.jpg" class="imgSlide">
                 </div>
             </div>
         </div>
+        <div class="col-lg-1"></div>
         
     </section>
 

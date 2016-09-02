@@ -43,8 +43,21 @@
 
 /* * * * * * * * * * NEWS * * * * * * * * * */
 
-.slide {
+.news {
+	background: pink;
+	height: 600px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 
+.imgSlide {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+	height: 500px;
 }
 
 /* * * * * * * * * * INFOS * * * * * * * * * */
