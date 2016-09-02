@@ -90,7 +90,7 @@
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 
-            $mail->setFrom($email, 'MDJ');
+            $mail->setFrom($email);
             $mail->addAddress('joe@example.net');
 
             $mail->isHTML(true);
