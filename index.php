@@ -151,23 +151,23 @@
                 <h2 class="form-signin-heading textcenter">Nous contacter</h2>
                 
                 <label for="lastname" class="sr-only">Nom</label>
-                <input type="text" id="lastname" class="form-control" placeholder="Votre nom" required>
+                <input type="text" name="contact_lastname" id="lastname" class="form-control" placeholder="Votre nom" required>
                 
                 <br>
                 <label for="firstname" class="sr-only">Prénom</label>
-                <input type="text" id="firstname" class="form-control" placeholder="Votre prénom" required>
+                <input type="text" name="contact_firstname" id="firstname" class="form-control" placeholder="Votre prénom" required>
 
                 <br>
                 <label for="email" class="sr-only">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Votre email" required>
+                <input type="email" name="contact_email" id="email" class="form-control" placeholder="Votre email" required>
 
                 <br>
                 <label for="phone" class="sr-only">Téléphone ( facultatif )</label>
-                <input type="int" id="phone" class="form-control" placeholder="Votre téléphone ( facultatif )">
+                <input type="int" name="contact_phone" id="phone" class="form-control" placeholder="Votre téléphone ( facultatif )">
 
                 <br>
                 <label for="message" class="sr-only">Message</label>
-                <textarea type="text" name="message" rows="4" cols="40" class="form-control" placeholder="Entrez votre message" required></textarea>
+                <textarea type="text" name="contact_msg" rows="4" cols="40" class="form-control" placeholder="Entrez votre message" required></textarea>
 
                 <br>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Envoyer</button>
