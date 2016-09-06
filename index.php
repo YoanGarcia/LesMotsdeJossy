@@ -29,7 +29,8 @@
         <div class="container-fluid backgroundNav">
             <div class="navbar-header page-scroll">
                 <a class="navbar-brand page-scroll" href="index.php">
-                <img id="logo" alt="Brand" src="img/logoAsso.png" width="100px"></a>
+                	<img id="logo" alt="Brand" src="img/background/logoAsso.jpg" width="170px">
+                </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -39,62 +40,62 @@
             <br>
             <div class="inlineBlock textcenter containerTheme">
                 <a class="inlineblock" href="vue/theatre.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeTheatre">
                         <h2>Théatre<br>( a partir de 4 ans )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/as.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeAs">
                         <h2>Accompagnement à la scolarité<br>( primaire et collège )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/manif.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeManif">
                         <h2>Manifestations culturelles<br>( tout public )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/animretraite.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeAnimretraite">
                         <h2>Animation en maison de retraite<br>( seniors )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/filkidi.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeFilkidi">
                         <h2>Filkidi<br>( 18 mois à 6 ans )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/reaap.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeReaap">
                         <h2>REAAP<br>( la famille )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/tap.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeTap">
                         <h2>Temps d'activités périscolaires<br>( 3 à 11ans )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/francais.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeFrancais">
                         <h2>Lire, écrire, parler le français<br>( enfants et adultes )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/animspe.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeAnimspe">
                         <h2>Animation en établissement spécialisés<br>( enfants et adultes )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/cocciabeille.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeCocciabeille">
                         <h2>Coccinelles et abeilles<br>( mixer les enfants porteurs de handicaps et non porteurs de handicaps )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/pp.php">
-                    <div class="divTheme">
+                    <div class="divTheme themePp">
                         <h2>Printemps des Poètes<br>( pour tous )</h2>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/etpuis.php">
-                    <div class="divTheme">
+                    <div class="divTheme themeEtpuis">
                         <h2>Et puis<br>( pour tous )</h2>
                     </div>
                 </a>
@@ -117,19 +118,19 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="img/photo/slide1.jpg" class="imgSlide">
+                    <img src="img/photo/slide/slide1.jpg" class="imgSlide">
                 </div>
 
                 <div class="item">
-                    <img src="img/photo/slide2.png" class="imgSlide">
+                    <img src="img/photo/slide/slide2.png" class="imgSlide">
                 </div>
 
                 <div class="item">
-                    <img src="img/photo/slide3.png" class="imgSlide">
+                    <img src="img/photo/slide/slide3.png" class="imgSlide">
                 </div>
 
                 <div class="item">
-                    <img src="img/photo/slide4.jpg" class="imgSlide">
+                    <img src="img/photo/slide/slide4.jpg" class="imgSlide">
                 </div>
             </div>
         </div>

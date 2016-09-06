@@ -22,79 +22,83 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 
-<body id="page-top" data-spy="scroll">
+<body id="page-top" class="backThemeTheatre" data-spy="scroll">
 
-    <!-- Section News -->
-    <section>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+    <!-- Logo -->
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="img/photo/slide1.jpg">
-                </div>
+    <div class="container-fluid backgroundNavTheme textcenter">
+        <a class="navbar-brand page-scroll" href="../index.php">
+            <img id="logo" alt="Brand" src="../img/background/logoAsso.jpg" width="170px">
+        </a>
+        <h1>Titre du theme</h1>
+    </div>
 
-                <div class="item">
-                    <img src="img/photo/slide2.png">
-                </div>
+    <div class="col-lg-3 red">
+        <h2>La description du theme :</h2>
+        <p>C'est ici que les infos seront écritent</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    
+    <div class="col-lg-9 blue">
 
-                <div class="item">
-                    <img src="img/photo/slide3.png">
-                </div>
+        <!-- Section News -->
+        <section id="news" class="news">
+            <div class="col-lg-1"></div>
+            <div id="myCarousel" class="carousel slide col-lg-10" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
 
-                <div class="item">
-                    <img src="img/photo/slide4.jpg">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../img/photo/slide/slide1.jpg" class="imgSlide">
+                    </div>
+
+                    <div class="item">
+                        <img src="../img/photo/slide/slide2.png" class="imgSlide">
+                    </div>
+
+                    <div class="item">
+                        <img src="../img/photo/slide/slide3.png" class="imgSlide">
+                    </div>
+
+                    <div class="item">
+                        <img src="../img/photo/slide/slide4.jpg" class="imgSlide">
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="col-lg-1"></div>
+            
+        </section>
+
+        <!-- Section Contenu -->
+        <section id="contenu" class="contenu">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <br><br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
         
-    </section>
-
-    <!-- Section Info -->
-    <section>
-        
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <h2>Nous contacter</h2>
-
-                <form method="POST">
-                    <label for="lastname">Nom</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Entrez votre nom">
-
-                    <br>
-                    <label for="firstname">Prénom</label>
-                    <input type="text" name="firstname" id="firstname" placeholder="Entrez votre prénom">                    
-
-                    <br>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Entrez votre email">
-
-                    <br>
-                    <label for="phone">Téléphone ( facultatif )</label>
-                    <input type="email" name="email" id="email" placeholder="Entrez votre email">
-
-                    <br><br>
-                    <label for="message" class="txtgrey">Message</label><br>
-                    <textarea type="text" name="message" rows="4" cols="40" placeholder="Entrez votre message"></textarea>
-
-                    <br><br>
-                    <input type="submit" value="Envoyer">
-            </form>
-                
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -103,8 +107,8 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Les Mots de Jossy</strong></h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>adresse</li>
-                        <li><i class="fa fa-phone-square" aria-hidden="true"></i>telephone</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>BP 12 - 33670 Sadirac</li>
+                        <li><i class="fa fa-phone-square" aria-hidden="true"></i>06 30 76 20 13</li>
                         <li><i class="fa fa-envelope-square" aria-hidden="true"></i>lesmotsdejossy@orange.fr</li>
                         </li>
                     </ul>
@@ -115,8 +119,9 @@
     </footer>
 
     <!-- JS personnalisé -->
-    <script src="../js/script.js"></script>
-    <script src="../js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 </body>
 

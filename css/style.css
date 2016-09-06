@@ -15,20 +15,21 @@
 	padding-bottom: 200px;
 }
 
+.backgroundNavTheme {
+	padding-bottom: 70px;
+}
+
 .containerTheme {
 	margin-top: 100px;
 }
 
 .divTheme {
 	display: inline-block;
-
-	background: red;
 	color: blue;
 	width: 200px;
 	height: 100px;
 	cursor: pointer;
 	text-align: center;
-
 	padding-top: 18px;
 	margin-top: 70px;
 	margin-left: 100px;
@@ -39,6 +40,10 @@
 	background: blue;
 	color: red;
 	text-decoration: none;
+}
+
+.themeTheatre {
+	background: url(../img/photo/theatre/theatre1.jpg) no-repeat center center;
 }
 
 /* * * * * * * * * * NEWS * * * * * * * * * */
@@ -78,4 +83,27 @@
 
 footer {
 	background: lightgrey;
+}
+
+/************************************************************************************
+*************************************************************************************
+
+- - - - - - - - - - - - - - - - -  PAGE DES THEMES - - - - - - - - - - - - - - - - -
+
+*************************************************************************************
+************************************************************************************/
+
+/* * * * * * * * * * THEATRE * * * * * * * * * */
+
+.red {
+	background: red;
+}
+
+.blue {
+	background: blue;
+}
+
+.backThemeTheatre {
+	/*background: url(../img/photo/theatre/theatre1.jpg) no-repeat center center;*/
+	background: red;
 }
