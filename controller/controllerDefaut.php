@@ -15,6 +15,8 @@
         $post = array_map('trim', array_map('strip_tags', $_POST));
 
         if(isset($post['form'])){
+
+            // Gestion formulaire newsletter
             if($post['form'] == 'newsletter_form'){
 
                 if(isset($post['newsletter_email'])){
@@ -34,6 +36,9 @@
                     }
                 }
             }
+            // /Gestion formulaire newsletter
+
+            // Gestion formulaire de contact
             if($post['form'] == 'contact_form'){
 
                 if(isset($post['contact_firstname'])){
@@ -77,6 +82,7 @@
                     }
                 }
             }
+            // /Gestion formulaire de contact
         }
     }
 ?>
