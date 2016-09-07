@@ -11,7 +11,7 @@
 /* * * * * * * * * * NAVBAR * * * * * * * * * */
 
 .backgroundNav {
-	background: url(../img/background/imgBackground.jpeg) no-repeat center center;
+	background: url("../img/background/fond.jpg") no-repeat center center;
 	padding-bottom: 200px;
 }
 
@@ -43,7 +43,8 @@
 }
 
 .themeTheatre {
-	background: url(../img/photo/theatre/theatre1.jpg) no-repeat center center;
+	width: 100px;
+	height: 100px;
 }
 
 /* * * * * * * * * * NEWS * * * * * * * * * */
@@ -104,6 +105,6 @@ footer {
 }
 
 .backThemeTheatre {
-	/*background: url(../img/photo/theatre/theatre1.jpg) no-repeat center center;*/
-	background: red;
+	background: url("../img/photo/theatre/theatre1.jpg") no-repeat center center fixed;
+	background-size: cover;
 }

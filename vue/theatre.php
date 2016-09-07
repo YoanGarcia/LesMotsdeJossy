@@ -22,10 +22,9 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 
-<body id="page-top" class="backThemeTheatre" data-spy="scroll">
+<body id="page-top" class="backThemeTheatre container-fluid" data-spy="scroll">
 
     <!-- Logo -->
-
     <div class="container-fluid backgroundNavTheme textcenter">
         <a class="navbar-brand page-scroll" href="../index.php">
             <img id="logo" alt="Brand" src="../img/background/logoAsso.jpg" width="170px">
@@ -119,9 +118,9 @@
     </footer>
 
     <!-- JS personnalisé -->
-    <script src="js/script.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
 
 </body>
 

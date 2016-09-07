@@ -40,8 +40,9 @@
             <br>
             <div class="inlineBlock textcenter containerTheme">
                 <a class="inlineblock" href="vue/theatre.php">
-                    <div class="divTheme themeTheatre">
+                    <div class="divTheme">
                         <h2>Théatre<br>( a partir de 4 ans )</h2>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/as.php">
