@@ -43,7 +43,6 @@
 }
 
 .themeTheatre {
-	background: url(../img/photo/theatre/theatre1.jpg) no-repeat center center;
 }
 
 /* * * * * * * * * * NEWS * * * * * * * * * */
@@ -104,6 +103,6 @@ footer {
 }
 
 .backThemeTheatre {
-	/*background: url(../img/photo/theatre/theatre1.jpg) no-repeat center center;*/
-	background: red;
+	background: url('../img/photo/theatre/theatre1.jpg') no-repeat center center;
+	background-size: cover;
 }
