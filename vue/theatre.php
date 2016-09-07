@@ -106,9 +106,9 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Les Mots de Jossy</strong></h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>BP 12 - 33670 Sadirac</li>
-                        <li><i class="fa fa-phone-square" aria-hidden="true"></i>06 30 76 20 13</li>
-                        <li><i class="fa fa-envelope-square" aria-hidden="true"></i>lesmotsdejossy@orange.fr</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> BP 12 - 33670 Sadirac</li>
+                        <li><i class="fa fa-phone-square" aria-hidden="true"></i> 06 30 76 20 13</li>
+                        <li><i class="fa fa-envelope-square" aria-hidden="true"></i> lesmotsdejossy@orange.fr</li>
                         </li>
                     </ul>
                     <p>Copyright 2016 &copy; LesMotsdeJossy</p>
