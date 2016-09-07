@@ -8,10 +8,14 @@
 	text-align: center;
 }
 
+.imgThemeAccueil {
+	background: url("../img/background/fond.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
 /* * * * * * * * * * NAVBAR * * * * * * * * * */
 
 .backgroundNav {
-	background: url("../img/background/fond.jpg") no-repeat center center;
 	padding-bottom: 200px;
 }
 

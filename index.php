@@ -22,7 +22,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="page-top" data-spy="scroll">
+<body id="page-top" class="imgThemeAccueil" data-spy="scroll">
 
     <!-- Navbar -->
     <nav id="custom-nav" role="navigation">
