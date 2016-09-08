@@ -41,7 +41,7 @@
             <div class="inlineBlock textcenter containerTheme">
                 <a class="inlineblock" href="vue/theatre.php">
                     <div class="divTheme">
-                        <h3>Théatre</h3>
+                        <h3>Théâtre</h3>
                         <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
                         <p>A partir de 4 ans</p>
                     </div>
@@ -97,7 +97,7 @@
                 </a>
                 <a class="inlineblock" href="vue/animspe.php">
                     <div class="divTheme themeAnimspe">
-                        <h3>ESAT</h3>
+                        <h3>Etablissements spécialisés</h3>
                         <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
                         <p>Enfants et adultes</p>
                     </div>
@@ -106,7 +106,7 @@
                     <div class="divTheme themeCocciabeille">
                         <h3>Coccinelles et abeilles</h3>
                         <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
-                        <p>definir age</p>
+                        <p>Enfants porteurs de handicap</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/pp.php">
