@@ -29,7 +29,7 @@
         <div class="container-fluid backgroundNav">
             <div class="navbar-header page-scroll">
                 <a class="navbar-brand page-scroll" href="index.php">
-                	<img id="logo" alt="Brand" src="img/background/logoAsso.jpg" width="170px">
+                	<img id="logo" class="imgLogo" alt="Brand" src="img/background/logoAsso.jpg" width="170px">
                 </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -41,63 +41,86 @@
             <div class="inlineBlock textcenter containerTheme">
                 <a class="inlineblock" href="vue/theatre.php">
                     <div class="divTheme">
-                        <h2>Théatre<br>( a partir de 4 ans )</h2>
+                        <h3>Théatre</h3>
                         <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>A partir de 4 ans</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/as.php">
                     <div class="divTheme themeAs">
-                        <h2>Accompagnement à la scolarité<br>( primaire et collège )</h2>
+                        <h3>Accompagnement à la scolarité</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>Primaire et collège</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/manif.php">
                     <div class="divTheme themeManif">
-                        <h2>Manifestations culturelles<br>( tout public )</h2>
+                        <h3>Manifestations culturelles</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>Tout public</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/animretraite.php">
                     <div class="divTheme themeAnimretraite">
-                        <h2>Animation en maison de retraite<br>( seniors )</h2>
+                        <h3>Animation en maison de retraite</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>Seniors</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/filkidi.php">
                     <div class="divTheme themeFilkidi">
-                        <h2>Filkidi<br>( 18 mois à 6 ans )</h2>
+                        <h3>Filkidi</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>18 mois à 6 ans</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/reaap.php">
                     <div class="divTheme themeReaap">
-                        <h2>REAAP<br>( la famille )</h2>
+                        <h3>REAAP</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>La famille</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/tap.php">
                     <div class="divTheme themeTap">
-                        <h2>Temps d'activités périscolaires<br>( 3 à 11ans )</h2>
+                        <h3>Temps d'activités périscolaires</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>3 à 11 ans</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/francais.php">
                     <div class="divTheme themeFrancais">
-                        <h2>Lire, écrire, parler le français<br>( enfants et adultes )</h2>
+                        <h3>Lire, écrire, parler le français</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>Enfants et adultes</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/animspe.php">
                     <div class="divTheme themeAnimspe">
-                        <h2>Animation en établissement spécialisés<br>( enfants et adultes )</h2>
+                        <h3>ESAT</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>Enfants et adultes</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/cocciabeille.php">
                     <div class="divTheme themeCocciabeille">
-                        <h2>Coccinelles et abeilles<br>( mixer les enfants porteurs de handicaps et non porteurs de handicaps )</h2>
+                        <h3>Coccinelles et abeilles</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>definir age</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/pp.php">
                     <div class="divTheme themePp">
-                        <h2>Printemps des Poètes<br>( pour tous )</h2>
+                        <h3>Printemps des Poètes</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>Pour tous</p>
                     </div>
                 </a>
                 <a class="inlineblock" href="vue/etpuis.php">
                     <div class="divTheme themeEtpuis">
-                        <h2>Et puis<br>( pour tous )</h2>
+                        <h3>Et puis</h3>
+                        <img src="img/photo/theatre/theatre1.jpg" class="themeTheatre">
+                        <p>Pour tous</p>
                     </div>
                 </a>
             </div>
@@ -106,6 +129,9 @@
 
     <!-- Section News -->
     <section id="news" class="news">
+        <div class="titreNews textcenter">
+            <h2>Les rendez-vous à ne pas manquer</h2>
+        </div>
     	<div class="col-lg-1"></div>
         <div id="myCarousel" class="carousel slide col-lg-10" data-ride="carousel">
             <!-- Indicators -->

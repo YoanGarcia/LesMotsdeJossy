@@ -27,7 +27,7 @@
     <!-- Logo -->
     <div class="container-fluid backgroundNavTheme textcenter">
         <a class="navbar-brand page-scroll" href="../index.php">
-            <img id="logo" alt="Brand" src="../img/background/logoAsso.jpg" width="170px">
+            <img id="logo" class="imgLogo" alt="Brand" src="../img/background/logoAsso.jpg" width="170px">
         </a>
         <h1>Titre du theme</h1>
     </div>
