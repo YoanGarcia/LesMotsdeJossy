@@ -18,6 +18,14 @@ h3 {
 	color: #098F9B;
 }
 
+.red {
+	background: red;
+}
+
+.blue {
+	background: blue;
+}
+
 /* * * * * * * * * * NAVBAR * * * * * * * * * */
 
 .imgLogo {
@@ -53,12 +61,14 @@ h3 {
 	margin: 30px 10px 0px 10px;
 	border: 5px solid #098F9B;
 	border-radius: 20px;
+	box-shadow: 3px 3px 10px black;
 }
 
 .divTheme:hover {
 	border: 5px solid transparent;
 	text-decoration: none;
 	opacity: 0.8;
+	box-shadow: 0px 0px 0px white;
 }
 
 .themeTheatre {
@@ -76,6 +86,23 @@ h3 {
 	width: 48%;
 	margin-left: 26%;
 	margin-right: 26%;
+}
+
+.newsletter {
+	color: #098F9B;
+	background: #7C07A9;
+	border-radius: 0px 0px 60px 60px;
+	width: 54%;
+	margin-left: 23%;
+	margin-right: 23%;
+	padding: 0px 20px 0px 20px;
+}
+
+.newsletter:hover {
+	color: #7C07A9;
+	background: #098F9B;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .news {
@@ -99,12 +126,38 @@ h3 {
 
 /* * * * * * * * * * CONTACT * * * * * * * * * */
 
-.contact {
-	background: green;
+.divCarteContact {
+	margin: 50px 15% 50px 15%;
 }
 
-.carteContact {
-	margin: 10%;
+.formContact {
+	margin: 0px 0px 0px 0px;
+}
+
+.textFormContact {
+	color: #098F9B;
+}
+
+.titreFormContact {
+	color: #098F9B;
+	background: #7C07A9;
+	border-radius: 60px 60px 0px 0px;
+	margin-left: 26%;
+	margin-right: 26%;
+}
+
+.boutonFormContact {
+	color: #7C07A9;
+	background: white;
+	padding: 0px 35px 0px 35px;
+	border: 2px solid #7C07A9;
+	border-radius: 10px;
+}
+
+.boutonFormContact:hover {
+	color: white;
+	background: #7C07A9;
+	border: 2px solid transparent;
 }
 
 /* * * * * * * * * * FOOTER * * * * * * * * * */
@@ -122,14 +175,6 @@ footer {
 ************************************************************************************/
 
 /* * * * * * * * * * THEATRE * * * * * * * * * */
-
-.red {
-	background: red;
-}
-
-.blue {
-	background: blue;
-}
 
 .backThemeTheatre {
 	background: url("../img/photo/theatre/theatre1.jpg") no-repeat center center fixed;
