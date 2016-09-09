@@ -81,7 +81,8 @@ h3 {
 
 .titreNews {
 	color: #098F9B;
-	background: #7C07A9;
+	background: white;
+	border: 1px solid #7C07A9;
 	border-radius: 60px 60px 0px 0px;
 	width: 48%;
 	margin-left: 26%;
