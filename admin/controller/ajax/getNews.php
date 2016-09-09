@@ -9,10 +9,6 @@
 
 			if(isset($post['theme']) && !empty($post['theme'])){
 				$news = $controller->getNews($post['theme']);
-
-				foreach ($news as $new) {
-					
-				}
 			}
 			else{
 				die('Theme vide');
@@ -23,11 +19,9 @@
 		die();
 	}
 ?>
-
-
-<?php foreach ($variable as $key => $value): ?>
+<?php foreach ($news as $new): ?>
 	<article>
-		<img src="">
-		<p></p>
+		<img src="<?=$new['img_link']?>">
+		<p><?=$new['content']?></p>
 	</article>
 <?php endforeach; ?>
