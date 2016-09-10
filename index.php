@@ -175,7 +175,7 @@
 
         <div class="textcenter">
             <h2>
-                <a class="newsletter">Tenez-vous informer grâce à notre newsletter ici</a>
+                <a class="newsletter">Notre newsletter</a>
             </h2>
         </div>
     </section>
