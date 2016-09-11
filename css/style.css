@@ -201,14 +201,14 @@ h3 {
 	background: white;
 	border: 3px solid #7C07A9;
 	border-radius: 15px;
-	width: 200px;
-	height: 200px;
-	margin: 8px 13px 8px 13px;
+	width: 150px;
+	height: 150px;
+	margin: 6px 11px 6px 11px;
 }
 
 .imgPartenaire {
-	width: 160px;
-	height: 147px;
+	width: 100px;
+	height: 100px;
 }
 
 /* * * * * * * * * * FOOTER * * * * * * * * * */
