@@ -20,6 +20,8 @@
 
     <!-- CSS personnalisé -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body id="page-top" class="imgThemeAccueil" data-spy="scroll">
@@ -181,8 +183,13 @@
     </section>
 
     <!-- Section Info -->
-    <section>
+    <section id="info" class="info container-fluid">
         
+        <div class="textcenter">
+            <h2 class="titreInfo">Qui sommes nous et que faisont nous ?</h2>
+            <iframe width="700" height="394" class="videoYT" src="https://www.youtube.com/embed/-Q7wUbtT9gk" frameborder="0" allowfullscreen></iframe>
+        </div>
+
     </section>
 
     <!-- Contact -->
@@ -224,22 +231,133 @@
 
     </section>
 
+    <!-- Section Partenaire -->
+    <section id="partenaire" class="partenaire container-fluid inlineblock">
+        
+        <div class="titreSectionPartenaire textcenter">
+            <h2>Nos Partenaire</h2>    
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire">Partenaire 1</h4>
+            <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
+        </div>
+
+    </section>
+
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Les Mots de Jossy</strong></h4>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> BP 12 - 33670 Sadirac</li>
-                        <li><i class="fa fa-phone-square" aria-hidden="true"></i> 06 30 76 20 13</li>
-                        <li><i class="fa fa-envelope-square" aria-hidden="true"></i> lesmotsdejossy@orange.fr</li>
-                        </li>
-                    </ul>
-                    <p>Copyright 2016 &copy; LesMotsdeJossy</p>
-                </div>
+
+        <div class="container-fluid textcenter">
+            
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-4">
+                <h4 class="titreFooter">Les Mots de Jossy</h4>
+                
+                <br><i class="fa fa-map-marker" aria-hidden="true"></i> BP 12 - 33670 Sadirac
+                <br><i class="fa fa-phone-square" aria-hidden="true"></i> 06 30 76 20 13
+                <br><i class="fa fa-envelope-square" aria-hidden="true"></i> lesmotsdejossy@orange.fr
+                
+                <br><br><p>Copyright 2016 &copy; LesMotsdeJossy</p>
             </div>
+
+            <div class="col-lg-4">
+                <h4>Tenez-vous au courant</h4>
+                
+                <br><a href="https://www.facebook.com/laurent.garcia.7967?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+
+            </div>
+
+            <div class="col-lg-2"></div>
+
         </div>
+
     </footer>
 
     <!-- JS personnalisé -->

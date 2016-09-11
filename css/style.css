@@ -122,7 +122,21 @@ h3 {
 
 /* * * * * * * * * * INFOS * * * * * * * * * */
 
+.info {
+	margin-bottom: 70px;
+}
 
+.titreInfo {
+	color: #098F9B;
+	background: white;
+	border-radius: 60px 60px 0px 0px;
+	margin-left: 32%;
+	margin-right: 32%;
+}
+
+.videoYT {
+	border: 3px solid #098F9B;
+}
 
 /* * * * * * * * * * CONTACT * * * * * * * * * */
 
@@ -160,10 +174,53 @@ h3 {
 	border: 2px solid transparent;
 }
 
+/* * * * * * * * * * PARTENAIRE * * * * * * * * * */
+
+.partenaire {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.titreSectionPartenaire {
+	color: #098F9B;
+	background: white;
+	border-radius: 60px 60px 0px 0px;
+	margin-left: 26%;
+	margin-right: 26%;
+}
+
+.titrePartenaire {
+	color: #7C07A9;
+	background: white;
+	padding: 0px 5px 0px 5px;
+	border-radius: 20px;
+}
+
+.divPartenaire {
+	display: inline-block;
+	background: white;
+	border: 3px solid #7C07A9;
+	border-radius: 15px;
+	width: 200px;
+	height: 200px;
+	margin: 8px 13px 8px 13px;
+}
+
+.imgPartenaire {
+	width: 160px;
+	height: 147px;
+}
+
 /* * * * * * * * * * FOOTER * * * * * * * * * */
 
 footer {
-	background: lightgrey;
+	color: #098F9B;
+	background: white;
+	border-radius: 200px 200px 0px 0px;
+}
+
+.titreFooter {
+	text-decoration: underline;
 }
 
 /************************************************************************************
