@@ -1,5 +1,5 @@
 <?php
-
+    
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,7 +14,7 @@
     <aside>
         <nav>
             <ul>
-                <li><a href="#" class="theme" data-theme="retraite">Animation Retraite</a></li>
+                <li><a href="#" class="theme" data-theme="test">Animation Retraite</a></li>
                 <li><a href="#" class="theme" data-theme="spe">Animation S.P.E</a></li>
                 <li><a href="#" class="theme" data-theme="as">A.S</a></li>
                 <li><a href="#" class="theme" data-theme="cocci">Cocciabeille</a></li>
@@ -31,10 +31,30 @@
     </aside>
     <script>
         var lien = document.querySelectorAll('.theme');
+        var btn_modif = document.querySelectorAll('.btn_modif');
+        var xhr = new XMLHttpRequest();
+
+        btn_modif.forEach(function(value, index, array){
+            value.addEventListener('click', function(){
+                this.parentElement.innerHTML = 
+            });
+        });
+
+
 
         lien.forEach(function(value, index, array){
             value.addEventListener('click', function(){
-                console.log(this.getAttribute('data-theme'));
+                var method = "GET",
+                    url = "controller/ajax/getNews.php?theme=" + this.getAttribute('data-theme');
+
+                xhr.open(method, url, true);
+                xhr.onreadystatechange = function () {
+                        if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                            document.querySelector('.news').innerHTML = xhr.response;
+                        }
+                    };
+                xhr.send();
+                
             });
         });
     </script>
@@ -52,7 +72,7 @@
         </section>
 
         <section class="news">
-
+            <p>azeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeaze</p>
         </section>
     </main>
     </body>
