@@ -39,6 +39,13 @@ h3 {
 	opacity: 0.7;
 }
 
+.titreLogo {
+	margin-top: 20px;
+	margin-left: 27%;
+	margin-right: 25%;
+	border-radius: 150px 5px 150px 5px;
+}
+
 .backgroundNav {
 	padding-bottom: 200px;
 }
