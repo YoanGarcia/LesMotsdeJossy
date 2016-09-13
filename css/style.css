@@ -234,6 +234,6 @@ footer {
 /* * * * * * * * * * THEATRE * * * * * * * * * */
 
 .backThemeTheatre {
-	background: url("../img/photo/theatre/theatre1.jpg") no-repeat center center fixed;
+	background: url("../img/theme/theatre/theatre1.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
