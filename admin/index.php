@@ -31,16 +31,28 @@
     </aside>
     <script>
         var lien = document.querySelectorAll('.theme');
-        var btn_modif = document.querySelectorAll('.btn_modif');
         var xhr = new XMLHttpRequest();
+        
+        var btn = function(){
+            var btn_modif = document.querySelectorAll('.btn_modif');
 
-        btn_modif.forEach(function(value, index, array){
-            value.addEventListener('click', function(){
-                this.parentElement.innerHTML = 
+            btn_modif.forEach(function(value, index, array){
+                value.addEventListener('click', function(){
+                    var newID = this.getAttribute('data-idNews');
+
+                    var content = document.querySelector('.new'+ newID +' p').textContent;
+                    var img_link = document.querySelector('.new'+ newID +' img').getAttribute('src');
+
+                    document.querySelector('.new'+ newID).innerHTML = '' +
+                    '<form>'+
+                        '<label for="img_link">Image</label>' +
+                        '<input id="img_link" type="url" name="img_link" value="' + img_link + '">' +
+                        '<label for="content">Contenu</label>' +
+                        '<textarea id="content" name="textarea" rows="10" cols="50">' + content + '</textarea>' +
+                    '</form>';
+                });
             });
-        });
-
-
+        }
 
         lien.forEach(function(value, index, array){
             value.addEventListener('click', function(){
@@ -51,6 +63,7 @@
                 xhr.onreadystatechange = function () {
                         if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
                             document.querySelector('.news').innerHTML = xhr.response;
+                            btn();
                         }
                     };
                 xhr.send();

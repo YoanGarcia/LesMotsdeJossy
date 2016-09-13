@@ -18,7 +18,7 @@
 	}	
 ?>
 <?php foreach ($news as $new): ?>
-	<article>
+	<article class="new<?=$new['id']?>">
 		<img src="<?=$new['img_link']?>">
 		<p><?=$new['content']?></p>
 		<button type="button" class="btn_modif" data-idNews="<?=$new['id']?>">Modifier</button>
