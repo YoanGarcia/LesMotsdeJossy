@@ -43,13 +43,26 @@
                     var content = document.querySelector('.new'+ newID +' p').textContent;
                     var img_link = document.querySelector('.new'+ newID +' img').getAttribute('src');
 
+                    var image_profil = document.querySelector('#image_profil');
+
+
                     document.querySelector('.new'+ newID).innerHTML = '' +
-                    '<form>'+
+                    '<img id="preview">' +
+                    '<form method="POST" enctype="multipart/form-data">'+
                         '<label for="img_link">Image</label>' +
-                        '<input id="img_link" type="url" name="img_link" value="' + img_link + '">' +
+                        '<input type="hidden" name="MAX_FILE_SIZE" value="50000">' +
+                        '<input type="file" name="picture" id="picture">' +
                         '<label for="content">Contenu</label>' +
                         '<textarea id="content" name="textarea" rows="10" cols="50">' + content + '</textarea>' +
+                        '<input type="submit" value="Valider">' + 
                     '</form>';
+
+                    var img_new = document.querySelector('#picture');
+                    var preview = document.querySelector('#preview');
+
+                    img_new.addEventListener('change', function(e){
+                        preview.setAttribute('src', window.URL.createObjectURL(img_new.files[0]));
+                    });
                 });
             });
         }
