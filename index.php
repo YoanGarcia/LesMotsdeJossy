@@ -186,7 +186,7 @@
     <section id="info" class="info container-fluid">
         
         <div class="textcenter">
-            <h2 class="titreInfo">Qui sommes nous et que faisont nous ?</h2>
+            <h2 class="titreInfo">Qui sommes nous et que faisons-nous ?</h2>
             <iframe width="700" height="394" class="videoYT" src="https://www.youtube.com/embed/-Q7wUbtT9gk" frameborder="0" allowfullscreen></iframe>
         </div>
 
@@ -235,7 +235,7 @@
     <section id="partenaire" class="partenaire container-fluid inlineblock">
         
         <div class="titreSectionPartenaire textcenter">
-            <h2>Nos Partenaire</h2>    
+            <h2>Nos Partenaires</h2>    
         </div>
 
         <div class="divPartenaire textcenter">
