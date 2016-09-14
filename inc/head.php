@@ -22,6 +22,11 @@
     <link href="css/style.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- SweetAlert -->
+    <script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/sweetalert.css">
+    
 </head>
 
 <body id="page-top" class="imgThemeAccueil" data-spy="scroll">
