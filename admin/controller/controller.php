@@ -19,14 +19,30 @@
             }
         }
 
-        public function addNews($title, $img_link, $content, $theme){
+        public function addNews($img_link, $content, $theme){
             global $bdd;
 
-            $re_addNews = $bdd->prepare('INSERT INTO news (title, img_link, content, post_date, theme) VALUES(:title, :img_link, :content, now(), :theme)');
-            $re_addNews->bindValue(':title', $title);
+            $re_addNews = $bdd->prepare('INSERT INTO news (img_link, content, theme) VALUES(:img_link, :content, :theme)');
             $re_addNews->bindValue(':img_link', $img_link);
             $re_addNews->bindValue(':content', $content);
             $re_addNews->bindValue(':theme', $theme);
+
+            if($re_addNews->execute()){
+                return true;
+            }
+            else{
+                throw new Exception($re_getNews->errorInfo()[2]);
+            }
+        }
+
+        public function updateNews($img_link, $content, $visible, $id){
+            global $bdd;                     
+
+            $re_addNews = $bdd->prepare('UPDATE news SET (img_link, content, hide) VALUES(:img_link, :content, :hide) WHERE id = :id');
+            $re_addNews->bindValue(':img_link', $img_link);
+            $re_addNews->bindValue(':content', $content);
+            $re_addNews->bindValue(':hide', $visible);
+            $re_addNews->bindValue(':id', $id);
 
             if($re_addNews->execute()){
                 return true;

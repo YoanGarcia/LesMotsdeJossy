@@ -9,7 +9,7 @@
     </head>
     <body>
     <header>
-
+        
     </header>
     <aside>
         <nav>
@@ -42,26 +42,47 @@
 
                     var content = document.querySelector('.new'+ newID +' p').textContent;
                     var img_link = document.querySelector('.new'+ newID +' img').getAttribute('src');
-
-                    var image_profil = document.querySelector('#image_profil');
-
+                    var theme = document.querySelector('.new'+ newID).getAttribute('data-theme');
 
                     document.querySelector('.new'+ newID).innerHTML = '' +
                     '<img id="preview">' +
-                    '<form method="POST" enctype="multipart/form-data">'+
+                    '<form method="POST" enctype="multipart/form-data" class="form_modif">'+
                         '<label for="img_link">Image</label>' +
-                        '<input type="hidden" name="MAX_FILE_SIZE" value="50000">' +
+                        '<input type="hidden" name="ajax" value="ajax">' +
+                        '<input type="hidden" name="id" value="'+newID+'">' +
+                        '<input type="hidden" name="theme" value="'+theme+'">' +
                         '<input type="file" name="picture" id="picture">' +
                         '<label for="content">Contenu</label>' +
                         '<textarea id="content" name="textarea" rows="10" cols="50">' + content + '</textarea>' +
                         '<input type="submit" value="Valider">' + 
                     '</form>';
 
-                    var img_new = document.querySelector('#picture');
-                    var preview = document.querySelector('#preview');
+                    var img_new = document.querySelector('.new'+ newID +' #picture');
+                    var preview = document.querySelector('.new'+ newID +' #preview');
 
                     img_new.addEventListener('change', function(e){
                         preview.setAttribute('src', window.URL.createObjectURL(img_new.files[0]));
+                    });
+
+                    form_modif = document.querySelectorAll('.form_modif');
+
+                    form_modif.forEach(function(value, index, array){
+                        value.addEventListener('submit', function(e){
+                            e.preventDefault();
+
+                            var formElement = value;
+                            var request = new XMLHttpRequest();
+
+                            request.open("POST", "test.php");
+
+                            request.onreadystatechange = function(){
+                                if(request.readyState === XMLHttpRequest.DONE && request.status === 200) {
+                                    console.log(request.response);
+                                }
+                            };
+
+                            request.send(new FormData(formElement));
+                        });
                     });
                 });
             });
@@ -74,11 +95,11 @@
 
                 xhr.open(method, url, true);
                 xhr.onreadystatechange = function () {
-                        if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                            document.querySelector('.news').innerHTML = xhr.response;
-                            btn();
-                        }
-                    };
+                    if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                        document.querySelector('.news').innerHTML = xhr.response;
+                        btn();
+                    }
+                };
                 xhr.send();
                 
             });
@@ -98,7 +119,6 @@
         </section>
 
         <section class="news">
-            <p>azeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeazeaze</p>
         </section>
     </main>
     </body>
