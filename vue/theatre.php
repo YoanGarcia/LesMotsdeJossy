@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="fr">
     <meta name="author" content="Yoan Garcia, Alexis Meunier">
-    <meta name="description" content="Site de l'association LesMotsdeJossy">
+    <meta name="description" content="Site de l'association Les Mots de Jossy">
     <meta name="copyright" content="Yoan Garcia, Alexis Meunier">
 
     <!-- Bootstrap Core CSS -->
@@ -19,36 +19,51 @@
     <link rel="stylesheet" href="../css/font-awesome.min.css">
 
     <!-- CSS personnalisé -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/styleVue.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
-<body id="page-top" class="backThemeTheatre container-fluid" data-spy="scroll">
+<body id="page-top" class="backThemeTheatre" data-spy="scroll">
 
-    <!-- Logo -->
-    <div class="container-fluid backgroundNavTheme textcenter">
-        <a class="navbar-brand page-scroll" href="../index.php">
-            <img id="logo" class="imgLogo" alt="Brand" src="../img/background/logoAsso.jpg" width="170px">
-        </a>
-        <h1>Titre du theme</h1>
-    </div>
-
-    <div class="col-lg-3 red">
-        <h2>La description du theme :</h2>
-        <p>C'est ici que les infos seront écritent</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <!-- Navbar -->
+    <nav id="custom-nav" role="navigation">
+        <div class="container-fluid backgroundNav">
+            <div class="navbar-header page-scroll col-lg-12">
+                <a class="navbar-brand page-scroll lienAccueil" href="../index.php">
+                    <img id="logo" class="imgLogo" alt="Brand" src="../img/background/logoAsso.jpg" width="170px">
+                    <div class="textcenter retourAccueil">
+                        <p>Accueil</p>
+                    </div>
+                </a>
     
-    <div class="col-lg-9 blue">
+                <div class="textcenter">
+                    <h1 class="titreTheme">Théâtre</h1>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- div Global -->
+    <div class="container-fluid col-lg-12">
+
+        <!-- Div Description -->
+        <div class="description container-fluid col-lg-3">
+            <div class="textcenter">
+                <h2 class="titreDescription">Description :</h2>
+            </div>
+
+            <br><br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
 
         <!-- Section News -->
-        <section id="news" class="news">
-            <div class="col-lg-1"></div>
-            <div id="myCarousel" class="carousel slide col-lg-10" data-ride="carousel">
+        <section id="news" class="news container-fluid col-lg-9">
+            <div class="titreNews textcenter">
+                <h2>Les rendez-vous à ne pas manquer</h2>
+            </div>
+            <div id="myCarousel" class="carouselVue slide col-lg-7" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -60,61 +75,85 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="../img/photo/slide/slide1.jpg" class="imgSlide">
+                        <img src="../img/slide/accueil/slide1.jpg" class="imgSlide">
                     </div>
 
                     <div class="item">
-                        <img src="../img/photo/slide/slide2.png" class="imgSlide">
+                        <img src="../img/slide/accueil/slide2.png" class="imgSlide">
                     </div>
 
                     <div class="item">
-                        <img src="../img/photo/slide/slide3.png" class="imgSlide">
+                        <img src="../img/slide/accueil/slide3.png" class="imgSlide">
                     </div>
 
                     <div class="item">
-                        <img src="../img/photo/slide/slide4.jpg" class="imgSlide">
+                        <img src="../img/slide/accueil/slide4.jpg" class="imgSlide">
                     </div>
                 </div>
             </div>
-            <div class="col-lg-1"></div>
-            
         </section>
 
-        <!-- Section Contenu -->
-        <section id="contenu" class="contenu">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- Div Contenu -->
+        <div class="contenu container-fluid col-lg-3">
+            <div class="textcenter">
+                <h2 class="titreContenu">Contenu :</h2>
+            </div>
+
             <br><br><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+            
+        <!-- Section Archive -->
+        <div class="col-lg-1"></div>
+        <section id="archive" class="archive container-fluid col-lg-8 inlineblock">
+            <div class="titreArchive textcenter">
+                <h2>Les activités réalisées</h2>    
+            </div>
+
+            <div class="divArchive textcenter">
+                <h4 class="titreDivArchive">AlloWin à Sadirac</h4>
+                <img src="../img/theme/theatre/theatre1.jpg" class="imgArchive">
+                <p class="dateArchive">12 novembre 2008</p>
+            </div>
+
+            <div class="divArchive textcenter">
+                <h4 class="titreDivArchive">AlloWin à Sadirac</h4>
+                <iframe class="imgArchive" src="https://www.youtube.com/embed/-Q7wUbtT9gk" frameborder="0" allowfullscreen></iframe>
+                <p class="dateArchive">12 novembre 2008</p>
+            </div>
         </section>
-        
+
     </div>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Les Mots de Jossy</strong></h4>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> BP 12 - 33670 Sadirac</li>
-                        <li><i class="fa fa-phone-square" aria-hidden="true"></i> 06 30 76 20 13</li>
-                        <li><i class="fa fa-envelope-square" aria-hidden="true"></i> lesmotsdejossy@orange.fr</li>
-                        </li>
-                    </ul>
-                    <p>Copyright 2016 &copy; LesMotsdeJossy</p>
-                </div>
+
+        <div class="container-fluid textcenter">
+            
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-4">
+                <h4 class="titreFooter">Les Mots de Jossy</h4>
+                
+                <br><i class="fa fa-map-marker" aria-hidden="true"></i> BP 12 - 33670 Sadirac
+                <br><i class="fa fa-phone-square" aria-hidden="true"></i> 06 30 76 20 13
+                <br><i class="fa fa-envelope-square" aria-hidden="true"></i> lesmotsdejossy@orange.fr
+                
+                <br><br><p>Copyright 2016 &copy; LesMotsdeJossy</p>
             </div>
+
+            <div class="col-lg-4">
+                <h4>Tenez-vous au courant</h4>
+                
+                <br><a href="https://www.facebook.com/laurent.garcia.7967?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+
+            </div>
+
+            <div class="col-lg-2"></div>
+
         </div>
+
     </footer>
 
     <!-- JS personnalisé -->

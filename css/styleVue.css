@@ -1,0 +1,177 @@
+/* * * * * * * * * * TOUT * * * * * * * * * */
+
+.inlineBlock {
+	display: inline-block;
+}
+
+.textcenter {
+	text-align: center;
+}
+
+h3 {
+	font-size: 18px;
+	color: #098F9B;
+}
+
+.red {
+	background: red;
+}
+
+.blue {
+	background: blue;
+}
+
+.green {
+	background: green;
+}
+
+/* * * * * * * * * * FOND D'ECRAN * * * * * * * * * */
+
+.backThemeTheatre {
+	background: url("../img/theme/theatre/theatre1.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+/* * * * * * * * * * NAVBAR * * * * * * * * * */
+
+.imgLogo {
+	border-radius: 20px 20px 0px 0px;
+	cursor: pointer;
+	width: 130px;
+	height: 90px;
+}
+
+.lienAccueil:hover {
+	opacity: 0.7;
+}
+
+.backgroundNav {
+	padding-bottom: 150px;
+}
+
+.titreTheme {
+	color: #098F9B;
+	text-shadow: 2px 2px 5px black;
+	font-size: 100px;
+	width: 48%;
+	margin-left: 26%;
+	margin-right: 26%;
+	background: white;
+	border-radius: 100%;
+	border: 5px solid #7C07A9;
+}
+
+.retourAccueil {
+	background: white;
+	color: #7C07A9;
+	border-radius: 0px 0px 50px 50px;
+	padding-top: 5px;
+}
+
+/* * * * * * * * * * DESCRIPTION * * * * * * * * * */
+
+.description {
+	height: 700px;
+	background: white;
+	color: black;
+	border-radius: 15px;
+	border: 5px solid #098F9B;
+	margin-bottom: 70px;
+}
+
+.titreDescription {
+	color: #098F9B;
+}
+
+/* * * * * * * * * * NEWS * * * * * * * * * */
+
+.news {
+	height: 700px;
+	margin-bottom: 70px;
+}
+
+.titreNews {
+	color: #098F9B;
+	text-shadow: 2px 2px 1px grey;
+	background: white;
+	border-radius: 60px 60px 0px 0px;
+	width: 48%;
+	margin-left: 26%;
+	margin-right: 26%;
+}
+
+.imgSlide {
+	width: 64%;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+	height: 500px;
+	margin-top: 50px;
+}
+
+.carouselVue {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/* * * * * * * * * * CONTENU * * * * * * * * * */
+
+.contenu {
+	height: 700px;
+	background: white;
+	color: black;
+	border-radius: 15px;
+	border: 5px solid #098F9B;
+	margin-bottom: 70px;
+}
+
+.titreContenu {
+	color: #098F9B;
+}
+
+/* * * * * * * * * * ARCHIVE * * * * * * * * * */
+
+.titreArchive {
+	color: #098F9B;
+	text-shadow: 2px 2px 1px grey;
+	background: white;
+	border-radius: 60px 60px 0px 0px;
+	width: 48%;
+	margin-left: 26%;
+	margin-right: 26%;
+}
+
+.titreDivArchive {
+	font-weight: bold;
+}
+
+.divArchive {
+	display: inline-block;
+	color: #7C07A9;
+	background: white;
+	border-radius: 10px;
+	border: 4px solid #7C07A9;
+	width: 43%;
+	height: 300px;
+	margin: 18px;
+}
+
+.imgArchive {
+	width: 85%;
+	height: 72%;
+}
+
+/* * * * * * * * * * FOOTER * * * * * * * * * */
+
+footer {
+	color: #098F9B;
+	background: pink;
+	border-radius: 200px 200px 0px 0px;
+}
+
+.titreFooter {
+	text-decoration: underline;
+}
