@@ -15,7 +15,7 @@ $('.newsletter').click(function(){
             swal.showInputError("le champ ne doit pas être vide");     
             return false   
         }      
-        swal("Nice!", "You wrote: " + inputValue, "success"); 
+        swal("Vous ête bien inscrit", "", "success"); 
     });
 });
 
