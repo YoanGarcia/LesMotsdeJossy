@@ -4,6 +4,12 @@
     $controller = new Controller();
 
     $controller->auth();
+
+    if(!empty($_POST)){
+        $post = array_map('trim', array_map('strip_tags', $_POST));
+
+
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -107,6 +113,8 @@
 
         lien.forEach(function(value, index, array){
             value.addEventListener('click', function(){
+                document.querySelector('.input_theme').setAttribute('value', this.getAttribute('data-theme'));;
+
                 var method = "GET",
                     url = "controller/ajax/getNews.php?theme=" + this.getAttribute('data-theme');
 
@@ -139,6 +147,33 @@
         <section class="news">
         </section>
         <h1>activités</h1>
+        <h2>Ajouter activite</h2>
+        <form method="post">
+            <input type="hidden" name="theme" class="input_theme" value="">
+            <input type="text" name="title">
+            <input type="text" name="link" id="link_vid" style="display: none;">
+            <input type="file" name="picture" id="picture_a"><br>
+            <input type="checkbox" name="video" id="check_vid" value="1">
+            <input type="submit" name="ajouter">
+        </form>
+        <script type="text/javascript">
+            var check_vid = document.querySelector('#check_vid');
+            var vid =  document.querySelector('#link_vid');
+            var pic = document.querySelector('#picture_a');
+
+
+            check_vid.addEventListener('click', function(){
+                if(check_vid.checked){
+                    pic.style.display = 'none';
+                    vid.style.display = 'inline';
+                }
+                else{
+                    pic.style.display = 'inline';
+                    vid.style.display = 'none';
+                }
+            });
+        </script>
+
         <section class="activite">
         <div class="divArchive textcenter">
             <h4 class="titreDivArchive">AlloWin à Sadirac</h4>

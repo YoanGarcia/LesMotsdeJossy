@@ -5,7 +5,7 @@
 
 	$controller->auth();
 
-	$imageFinale = '';
+	$imageFinale = 'aze';
 
 	if(!empty($_POST)){
         $post = array_map('trim', array_map('strip_tags', $_POST));
@@ -30,7 +30,9 @@
 		}
 	}
 
-	$controller->addPartenaire($post['nom'], $imageFinale);
+	if(!empty($_POST)){
+		$controller->addPartenaire($post['nom'], $imageFinale);
+	}
 ?>
 <!DOCTYPE html>
 <html>

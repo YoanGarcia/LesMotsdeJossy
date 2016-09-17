@@ -24,7 +24,7 @@
         <nav>
             <ul>
                 <li><a href="editNews.php">modifier un theme</a></li>
-                <li><a href="editPart.php">Ajouter un partenaire</a></li>
+                <li><a href="addPartenaire.php">Ajouter un partenaire</a></li>
             </ul>
         </nav>        
     <?php else: ?>
