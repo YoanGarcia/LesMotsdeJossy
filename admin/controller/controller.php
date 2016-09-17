@@ -40,7 +40,7 @@
 
         public function auth(){
             if(!isset($_SESSION['connected'])){
-                die();
+                header('Location: index.php'); 
             }
             else{
                 return true;
