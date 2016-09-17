@@ -3,6 +3,8 @@
 
     $controller = new Controller();
 
+    $controller->auth();
+
 	if(!empty($_GET)){
 		$get = array_map('trim', array_map('strip_tags', $_GET));
 
@@ -19,8 +21,13 @@
 ?>
 <?php foreach ($news as $new): ?>
 	<article class="new<?=$new['id']?>" data-theme="<?=$get['theme']?>">
-		<img src="<?=$new['img_link']?>">
+		<img src="../<?=$new['img_link']?>?t=<?=time()?>">
 		<p><?=$new['content']?></p>
+		<?php if ($new['hide'] == 1): ?>
+			<p class="phide" data-hide="1">News non Visible</p>
+		<?php else: ?>
+			<p class="phide" data-hide="0">News Visible</p>
+		<?php endif ?>
 		<button type="button" class="btn_modif" data-idNews="<?=$new['id']?>">Modifier</button>
 	</article>
 <?php endforeach; ?>

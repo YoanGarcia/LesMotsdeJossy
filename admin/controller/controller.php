@@ -1,9 +1,97 @@
 <?php
+    session_start();
     //require_once '../../vendor/autoload.php';
 
     $bdd = new PDO('mysql:host=localhost;dbname=mdj;charset=utf8', 'root', '');
 
     class Controller {
+
+        public function connect($id, $pswd){
+            global $bdd;
+
+            $re_connect = $bdd->prepare('SELECT * FROM users WHERE email = :email');
+            $re_connect->bindValue(':email', $id);
+
+            if($re_connect->execute()){
+                $user = $re_connect->fetch(PDO::FETCH_ASSOC);
+
+                if($pswd == $user['password']){
+                    $_SESSION['connected'] = true;
+                    return true;
+                }
+                else{
+                    unset($_SESSION['connected']);
+                    return false;
+                }
+            }
+            else{
+                throw new Exception($re_connect->errorInfo()[2]);
+            }
+        }
+
+        public function isConnect(){
+            if(!isset($_SESSION['connected'])){
+                return false;
+            }
+            else{
+                return true;
+            } 
+        }
+
+        public function auth(){
+            if(!isset($_SESSION['connected'])){
+                die();
+            }
+            else{
+                return true;
+            } 
+        }
+
+        public function getActivites($theme){
+            global $bdd;
+
+            $re_getActivite = $bdd->prepare('SELECT * FROM activites WHERE theme = :theme ORDER BY post_date ASC');
+            $re_getActivite->bindValue(':theme', $theme);
+
+            if($re_getActivite->execute()){
+                return $re_getActivite->fetchall(PDO::FETCH_ASSOC);
+            }
+            else{
+                throw new Exception($re_getActivite->errorInfo()[2]);
+            }
+        }
+
+        public function addActivites($title, $link, $theme, $type){
+            global $bdd;
+
+            $re_addActivites = $bdd->prepare('INSERT INTO news (title, link, post_date, theme, type) VALUES (:title, :link, :post_date, :theme, :type)');
+            $re_addActivites->bindValue(':title', $title);
+            $re_addActivites->bindValue(':link', $link);
+            $re_addActivites->bindValue(':post_date', date('W F Y', time()));
+            $re_addActivites->bindValue(':theme', $theme);
+            $re_addActivites->bindValue(':type', $type);
+
+            if($re_addActivites->execute()){
+                return true;
+            }
+            else{
+                throw new Exception($re_addActivites->errorInfo()[2]);
+            }
+        }
+
+        public function delete($table, $id){
+            global $bdd;
+
+            $re_del = $bdd->prepare('DELETE FROM '.$table.' WHERE id = :id');
+            $re_del->bindValue(':id', $title);
+
+            if($re_addActivites->execute()){
+                return true;
+            }
+            else{
+                throw new Exception($re_addActivites->errorInfo()[2]);
+            }
+        }
 
         public function getNews($theme){
             global $bdd;
@@ -38,33 +126,19 @@
         public function updateNews($img_link, $content, $visible, $id){
             global $bdd;                     
 
-            $re_addNews = $bdd->prepare('UPDATE news SET (img_link, content, hide) VALUES(:img_link, :content, :hide) WHERE id = :id');
-            $re_addNews->bindValue(':img_link', $img_link);
-            $re_addNews->bindValue(':content', $content);
-            $re_addNews->bindValue(':hide', $visible);
-            $re_addNews->bindValue(':id', $id);
+            $re_updateNews = $bdd->prepare('UPDATE news SET img_link = :img_link, content = :content, hide = :hide WHERE id = :id');
+            $re_updateNews->bindValue(':img_link', $img_link);
+            $re_updateNews->bindValue(':content', $content);
+            $re_updateNews->bindValue(':hide', $visible);
+            $re_updateNews->bindValue(':id', $id);
 
-            if($re_addNews->execute()){
+            if($re_updateNews->execute()){
                 return true;
             }
             else{
-                throw new Exception($re_getNews->errorInfo()[2]);
+                throw new Exception($re_updateNews->errorInfo()[2]);
             }
         }
-
-        // public function getAgenda($theme_Agenda){
-        //      global $bdd;
- 
-        //      $re_getAgenda = $bdd->prepare('SELECT * FROM agenda WHERE theme = :theme ORDER BY post_date ASC');
-        //      $re_getAgenda->bindValue(':theme', $theme_Agenda);
-
-        //      if($re_getAgenda->execute()){
-        //          return $re_getAgenda->fetchall(PDO::FETCH_ASSOC);
-        //      }
-        //      else{
-        //          throw new Exception($re_getAgenda->errorInfo()[2]);
-        //      }
-        // }
 
         public function addNewsletterSub($email){
             global $bdd;
