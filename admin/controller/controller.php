@@ -13,9 +13,9 @@
             $re_connect->bindValue(':email', $id);
 
             if($re_connect->execute()){
-                $user = $re_connect->fetch(PDO::FETCH_ASSOC);
+                $user = $re_connect->fetch();
 
-                if($pswd == $user['password']){
+                if($pswd == $user['password'] && $user != NULL){
                     $_SESSION['connected'] = true;
                     return true;
                 }
@@ -58,6 +58,21 @@
             }
             else{
                 throw new Exception($re_getActivite->errorInfo()[2]);
+            }
+        }
+
+        public function addPartenaire($name, $img){
+            global $bdd;
+
+            $re_addPartenaire = $bdd->prepare('INSERT INTO partenaires (name, img) VALUES (:name, :img)');
+            $re_addPartenaire->bindValue(':name', $name);
+            $re_addPartenaire->bindValue(':img', $img);
+
+            if($re_addPartenaire->execute()){
+                return true;
+            }
+            else{
+                throw new Exception($re_addPartenaire->errorInfo()[2]);
             }
         }
 
