@@ -86,6 +86,7 @@
                 <li><a href="#" class="theme" data-theme="reaap">R.E.A.A.P</a></li>
                 <li><a href="#" class="theme" data-theme="tap">T.A.P</a></li>
                 <li><a href="#" class="theme" data-theme="theatre">Theatre</a></li>
+                <li><a href="#" class="theme" data-theme="acceuil">Acceuil</a></li>
             </ul>
         </nav>
     </aside>

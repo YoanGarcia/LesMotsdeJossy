@@ -8,7 +8,7 @@
         public function getNews($theme){
             global $bdd;
 
-            $re_getNews = $bdd->prepare('SELECT * FROM news WHERE theme = :theme ORDER BY post_date ASC');
+            $re_getNews = $bdd->prepare('SELECT * FROM news WHERE theme = :theme AND hide = 0 ORDER BY post_date ASC');
             $re_getNews->bindValue(':theme', $theme);
 
             if($re_getNews->execute()){
@@ -23,7 +23,7 @@
              global $bdd;
 
              $re_getPartenaires = $bdd->prepare('SELECT * FROM partenaires');
-             
+
              if($re_getPartenaires->execute()){
                  return $re_getPartenaires->fetchall(PDO::FETCH_ASSOC);
              }

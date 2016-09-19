@@ -12,6 +12,8 @@
     $success['newsletter'] = false;
 
     $partenaires = $controller->getPartenaires();
+    $news = $controller->getNews('acceuil');
+    $numberNews = count($news);
 
     if(!empty($_POST)){
         $post = array_map('trim', array_map('strip_tags', $_POST));

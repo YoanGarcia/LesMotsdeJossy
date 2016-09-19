@@ -104,40 +104,31 @@
 	<div class="col-lg-1"></div>
     <div id="myCarousel" class="carousel slide col-lg-10" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-            <li data-target="#myCarousel" data-slide-to="5"></li>
+        <ol class="carousel-indicators"> 
+            <?php for ($i=0; $i < $numberNews; $i++): ?> 
+                <li data-target="#myCarousel" data-slide-to="<?=$i?>"></li>
+            <?php endfor; ?>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="img/slide/accueil/slide1.jpg" class="imgSlide">
-            </div>
-
-            <div class="item">
-                <img src="img/slide/accueil/slide2.png" class="imgSlide">
-            </div>
-
-            <div class="item">
-                <img src="img/slide/accueil/slide3.png" class="imgSlide">
-            </div>
-
-            <div class="item">
-                <img src="img/slide/accueil/slide4.jpg" class="imgSlide">
-            </div>
-
-            <div class="item">
-                <img src="img/slide/accueil/slide5.jpg" class="imgSlide">
-            </div>
-
-            <div class="item">
-                <img src="img/slide/accueil/slide6.jpg" class="imgSlide">
-            </div>
+            <?php $first = true;?>
+            <?php foreach ($news as $new): ?>
+                <?php if ($first): ?>
+                    <div class="item active">
+                        <h1><?=$new['title']?></h1>
+                        <img src="<?=$new['img_link']?>" class="imgSlide">
+                        <p><?=$new['content']?></p>
+                    </div>
+                    <?php $first = false;?>                    
+                <?php else: ?>
+                    <div class="item">
+                        <h1><?=$new['title']?></h1>
+                        <img src="<?=$new['img_link']?>" class="imgSlide">
+                        <p><?=$new['content']?></p>
+                    </div>
+                <?php endif ?>
+            <?php endforeach ?>
         </div>
     </div>
     <div class="col-lg-1"></div>
@@ -211,7 +202,7 @@
             <img src="<?=$partenaire['img']?>" class="imgPartenaire">
         </div>
     <?php endforeach ?>
-    
+
 </section>
 
 <?php require_once 'inc/footer.php'; ?>
