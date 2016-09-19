@@ -1,0 +1,70 @@
+/* * * * * * * * * * TOUT * * * * * * * * * */
+
+.inlineBlock {
+	display: inline-block;
+}
+
+.textcenter {
+	text-align: center;
+}
+
+.red {
+	background: red;
+}
+
+.blue {
+	background: blue;
+}
+
+.green {
+	background: green;
+}
+
+.backAdmin {
+	background: url("../img/background/fondAdmin.jpeg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+/* * * * * * * * * * NAVBAR * * * * * * * * * */
+
+.imgLogo {
+	border-radius: 20px 20px 0px 0px;
+	cursor: pointer;
+	width: 130px;
+	height: 90px;
+}
+
+.lienAccueil {
+	height: 150px;
+}
+
+.lienAccueil:hover {
+	opacity: 0.7;
+}
+
+.retourAccueil {
+	background: white;
+	color: #7C07A9;
+	border-radius: 0px 0px 50px 50px;
+	padding-top: 5px;
+}
+
+/* * * * * * * * * * CHOIX * * * * * * * * * */
+
+.titreAdmin {
+	text-decoration: underline;
+	color: #098F9B;
+}
+
+.divChoix {
+	background: white;
+	color: #7C07A9;
+	border: 3px solid #7C07A9;
+	border-radius: 15px;
+}
+
+.divChoix:hover {
+	background: #7C07A9;
+	color: white;
+	border: 3px solid white;
+}
