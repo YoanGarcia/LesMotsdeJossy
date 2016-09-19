@@ -3,7 +3,6 @@
 
 	$controller = new Controller();
 
-	$news = $controller->getNews('theatre');
-
-	$agenda = $controller->getAgenda('theatre');
+	$news = $controller->getNews('acceuil');
+	$numberNews = count($news);
 ?>

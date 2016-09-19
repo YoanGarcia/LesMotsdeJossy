@@ -116,14 +116,12 @@
             <?php foreach ($news as $new): ?>
                 <?php if ($first): ?>
                     <div class="item active">
-                        <h1><?=$new['title']?></h1>
                         <img src="<?=$new['img_link']?>" class="imgSlide">
                         <p><?=$new['content']?></p>
                     </div>
                     <?php $first = false;?>                    
                 <?php else: ?>
                     <div class="item">
-                        <h1><?=$new['title']?></h1>
                         <img src="<?=$new['img_link']?>" class="imgSlide">
                         <p><?=$new['content']?></p>
                     </div>

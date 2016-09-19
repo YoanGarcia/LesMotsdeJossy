@@ -109,10 +109,10 @@
             btn_modif.forEach(function(value, index, array){
                 value.addEventListener('click', function(){
                     var newID = this.getAttribute('data-idNews');
-                    var content = document.querySelector('.new'+ newID +' p').textContent;
+                    var theme = document.querySelector('.new'+ newID).getAttribute('data-theme');                    
+                    var content = document.querySelector('.new'+ newID +' .contentnews').textContent;
                     var hide = document.querySelector('.new'+ newID +' p.phide').getAttribute('data-hide');
                     var img_link = document.querySelector('.new'+ newID +' img').getAttribute('src');
-                    var theme = document.querySelector('.new'+ newID).getAttribute('data-theme');
                     var hide_checked = '';
 
                     if(hide == "1"){

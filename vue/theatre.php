@@ -1,3 +1,6 @@
+<?php 
+    require_once '../controller/controllerTheatre.php';
+?>
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -66,29 +69,28 @@
             <div id="myCarousel" class="carouselVue slide col-lg-7" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <?php for ($i=0; $i < $numberNews; $i++): ?> 
+                        <li data-target="#myCarousel" data-slide-to="<?=$i?>"></li>
+                    <?php endfor; ?>
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="../img/slide/accueil/slide1.jpg" class="imgSlide">
-                    </div>
-
-                    <div class="item">
-                        <img src="../img/slide/accueil/slide2.png" class="imgSlide">
-                    </div>
-
-                    <div class="item">
-                        <img src="../img/slide/accueil/slide3.png" class="imgSlide">
-                    </div>
-
-                    <div class="item">
-                        <img src="../img/slide/accueil/slide4.jpg" class="imgSlide">
-                    </div>
+                   <?php $first = true;?>
+                    <?php foreach ($news as $new): ?>
+                        <?php if ($first): ?>
+                            <div class="item active">
+                                <img src="../<?=$new['img_link']?>" class="imgSlide">
+                                <p><?=$new['content']?></p>
+                            </div>
+                            <?php $first = false;?>                    
+                        <?php else: ?>
+                            <div class="item">
+                                <img src="../<?=$new['img_link']?>" class="imgSlide">
+                                <p><?=$new['content']?></p>
+                            </div>
+                        <?php endif ?>
+                    <?php endforeach ?>
                 </div>
             </div>
         </section>

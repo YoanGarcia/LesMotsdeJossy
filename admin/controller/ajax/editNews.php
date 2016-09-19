@@ -48,7 +48,7 @@
 	$controller->updateNews($imageFinale, $post['content'], $hide, $post['id']);
 ?>
 <img src="../<?=$imageFinale?>?t=<?=time()?>">
-<p><?=$post['content']?></p>
+<p class="contentnews"><?=$post['content']?></p>
 <?php if ($hide == 1): ?>
 	<p class="phide" data-hide="1">News non Visible</p>
 <?php else: ?>

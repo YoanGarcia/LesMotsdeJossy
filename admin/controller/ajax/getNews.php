@@ -22,7 +22,7 @@
 <?php foreach ($news as $new): ?>
 	<article class="new<?=$new['id']?>" data-theme="<?=$get['theme']?>">
 		<img src="../<?=$new['img_link']?>?t=<?=time()?>">
-		<p><?=$new['content']?></p>
+		<p class="contentnews"><?=$new['content']?></p>
 		<?php if ($new['hide'] == 1): ?>
 			<p class="phide" data-hide="1">News non Visible</p>
 		<?php else: ?>
