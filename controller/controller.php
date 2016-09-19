@@ -1,5 +1,5 @@
 <?php
-    require_once '../vendor/autoload.php';
+    require_once 'http://localhost/Projets/LesMotsdeJossy/vendor/autoload.php';
 
     $bdd = new PDO('mysql:host=localhost;dbname=mdj;charset=utf8', 'root', '');
 
@@ -19,17 +19,16 @@
             }
         }
 
-        public function getAgenda($theme_Agenda){
+        public function getPartenaires(){
              global $bdd;
 
-             $re_getAgenda = $bdd->prepare('SELECT * FROM agenda WHERE theme = :theme ORDER BY post_date ASC');
-             $re_getAgenda->bindValue(':theme', $theme_Agenda);
-
-             if($re_getAgenda->execute()){
-                 return $re_getAgenda->fetchall(PDO::FETCH_ASSOC);
+             $re_getPartenaires = $bdd->prepare('SELECT * FROM partenaires');
+             
+             if($re_getPartenaires->execute()){
+                 return $re_getPartenaires->fetchall(PDO::FETCH_ASSOC);
              }
              else{
-                 throw new Exception($re_getAgenda->errorInfo()[2]);
+                 throw new Exception($re_getPartenaires->errorInfo()[2]);
              }
         }
 

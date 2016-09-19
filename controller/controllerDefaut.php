@@ -11,6 +11,8 @@
     $success['contact'] = false;
     $success['newsletter'] = false;
 
+    $partenaires = $controller->getPartenaires();
+
     if(!empty($_POST)){
         $post = array_map('trim', array_map('strip_tags', $_POST));
 

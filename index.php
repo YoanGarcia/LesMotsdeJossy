@@ -1,4 +1,7 @@
-<?php require_once 'inc/head.php'; ?>
+<?php
+    require_once 'controller/controllerDefaut.php';
+    require_once 'inc/head.php'; 
+?>
 
             <img class="titreLogo" alt="BrandTitle" src="img/background/titreAsso.jpg" width="550px">
         </div>
@@ -202,96 +205,13 @@
         <h2>Nos Partenaires</h2>    
     </div>
 
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
-    <div class="divPartenaire textcenter">
-        <h4 class="titrePartenaire">Partenaire 1</h4>
-        <img src="img/partenaire/partenaire.jpg" class="imgPartenaire">
-    </div>
-
+    <?php foreach ($partenaires as $partenaire): ?>
+        <div class="divPartenaire textcenter">
+            <h4 class="titrePartenaire"><?=$partenaire['name']?></h4>
+            <img src="<?=$partenaire['img']?>" class="imgPartenaire">
+        </div>
+    <?php endforeach ?>
+    
 </section>
 
 <?php require_once 'inc/footer.php'; ?>
