@@ -1,5 +1,5 @@
 <?php
-    require_once 'http://localhost/Projets/LesMotsdeJossy/vendor/autoload.php';
+    require_once 'http://localhost/LesMotsdeJossy/vendor/autoload.php';
 
     $bdd = new PDO('mysql:host=localhost;dbname=mdj;charset=utf8', 'root', '');
 
