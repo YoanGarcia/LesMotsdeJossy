@@ -105,7 +105,7 @@
 
             <br><br>
             <label for="connexion_email" class="sr-only">Email</label>
-            <input type="text" id="connexion_email" class="form-control" name="connexion_email" placeholder="Email" required autofocus>
+            <input type="email" id="connexion_email" class="form-control" name="connexion_email" placeholder="Email" required autofocus>
             
             <label for="connexion_password" class="sr-only">Password</label>
             <input type="password" id="connexion_password" class="form-control" name="connexion_password" placeholder="Mots de passe" required>
