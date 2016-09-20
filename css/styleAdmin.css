@@ -68,3 +68,35 @@
 	color: white;
 	border: 3px solid white;
 }
+
+/* * * * * * * * * * NEWS * * * * * * * * * */
+
+.divEditTheme {
+	text-decoration: none;
+	color: #098F9B;
+	background: white;
+	padding: 15px;
+	margin: 15px;
+	border: 2px solid #098F9B;
+	border-radius: 15px;
+}
+
+.divEditTheme:hover {
+	text-decoration: none;
+	color: white;
+	background: #098F9B;
+	border: 2px solid white;
+}
+
+.divContenuTheme {
+	margin-top: 250px;
+}
+
+.news {
+	border: 5px solid #7C07A9;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

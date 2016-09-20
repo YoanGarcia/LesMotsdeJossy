@@ -67,32 +67,28 @@
     </nav>
 
     <div class="col-lg-12 textcenter">
-        <h1 class="titreAdmin">Modifier les Slides</h1>
+        <h1 class="titreAdmin">Choix du Thème</h1>
         <br><br><br><br>
     </div>
 
-    <aside>
-        <nav>
-            <ul>
-                <li><a href="#" class="theme" data-theme="test">Animation Retraite</a></li>
-                <li><a href="#" class="theme" data-theme="spe">Animation S.P.E</a></li>
-                <li><a href="#" class="theme" data-theme="as">A.S</a></li>
-                <li><a href="#" class="theme" data-theme="cocci">Cocciabeille</a></li>
-                <li><a href="#" class="theme" data-theme="etpuis">EtPuis</a></li>
-                <li><a href="#" class="theme" data-theme="fikidi">Fikidi</a></li>
-                <li><a href="#" class="theme" data-theme="francais">Francais</a></li>
-                <li><a href="#" class="theme" data-theme="manif">Manif</a></li>
-                <li><a href="#" class="theme" data-theme="pp">P.P</a></li>
-                <li><a href="#" class="theme" data-theme="reaap">R.E.A.A.P</a></li>
-                <li><a href="#" class="theme" data-theme="tap">T.A.P</a></li>
-                <li><a href="#" class="theme" data-theme="theatre">Theatre</a></li>
-                <li><a href="#" class="theme" data-theme="acceuil">Acceuil</a></li>
-            </ul>
-        </nav>
-    </aside>
+    <div class="col-lg-12 textcenter">    
+        <a href="#" class="divEditTheme" data-theme="acceuil">Accueil</a>
+        <a href="#" class="divEditTheme" data-theme="test">Animation Retraite</a>
+        <a href="#" class="divEditTheme" data-theme="spe">Animation S.P.E</a>
+        <a href="#" class="divEditTheme" data-theme="as">A.S</a>
+        <a href="#" class="divEditTheme" data-theme="cocci">Cocciabeille</a>
+        <a href="#" class="divEditTheme" data-theme="etpuis">EtPuis</a>
+        <a href="#" class="divEditTheme" data-theme="fikidi">Fikidi</a>
+        <a href="#" class="divEditTheme" data-theme="francais">Francais</a>
+        <a href="#" class="divEditTheme" data-theme="manif">Manif</a>
+        <a href="#" class="divEditTheme" data-theme="pp">P.P</a>
+        <a href="#" class="divEditTheme" data-theme="reaap">R.E.A.A.P</a>
+        <a href="#" class="divEditTheme" data-theme="tap">T.A.P</a>
+        <a href="#" class="divEditTheme" data-theme="theatre">Theatre</a>
+    </div>
 
     <script>
-        var lien = document.querySelectorAll('.theme');
+        var lien = document.querySelectorAll('.divEditTheme');
         var xhr = new XMLHttpRequest();
         var xhr2 = new XMLHttpRequest();
         
@@ -194,52 +190,60 @@
             });
         });
     </script>
-    <main>
-        <h1>News</h1>
+
+
+    <div class="container-fluid textcenter divContenuTheme">
+
+        <h2>Slide</h2>
+        <br><br>
         <section class="news">
         </section>
-        <h1>activités</h1>
-        <h2>Ajouter activite</h2>
+
+        <h2>activités</h2>
+        <br><br>
         <form method="post">
             <input type="hidden" name="theme" class="input_theme" value="">
-            <input type="text" name="title">
+            <input type="text" name="title" placeholder="Nom de l'activité">
             <input type="text" name="link" id="link_vid" style="display: none;">
             <input type="file" name="picture" id="picture_a"><br>
             <input type="checkbox" name="video" id="check_vid" value="1">
             <input type="submit" name="ajouter">
         </form>
-        <script type="text/javascript">
-            var check_vid = document.querySelector('#check_vid');
-            var vid =  document.querySelector('#link_vid');
-            var pic = document.querySelector('#picture_a');
+
+    </div>
+
+    <script type="text/javascript">
+        var check_vid = document.querySelector('#check_vid');
+        var vid =  document.querySelector('#link_vid');
+        var pic = document.querySelector('#picture_a');
 
 
-            check_vid.addEventListener('click', function(){
-                if(check_vid.checked){
-                    pic.style.display = 'none';
-                    vid.style.display = 'inline';
-                }
-                else{
-                    pic.style.display = 'inline';
-                    vid.style.display = 'none';
-                }
-            });
-        </script>
+        check_vid.addEventListener('click', function(){
+            if(check_vid.checked){
+                pic.style.display = 'none';
+                vid.style.display = 'inline';
+            }
+            else{
+                pic.style.display = 'inline';
+                vid.style.display = 'none';
+            }
+        });
+    </script>
 
-        <section class="activite">
-        <div class="divArchive textcenter">
-            <h4 class="titreDivArchive">AlloWin à Sadirac</h4>
-            <img src="../img/theme/theatre/theatre1.jpg" class="imgArchive" width="300" height="150">
-            <p class="dateArchive">12 novembre 2008</p>
-        </div>
+    <section class="activite">
+    <div class="divArchive textcenter">
+        <h4 class="titreDivArchive">AlloWin à Sadirac</h4>
+        <img src="../img/theme/theatre/theatre1.jpg" class="imgArchive" width="300" height="150">
+        <p class="dateArchive">12 novembre 2008</p>
+    </div>
 
-        <div class="divArchive textcenter">
-            <h4 class="titreDivArchive">AlloWin à Sadirac</h4>
-            <iframe class="imgArchive" src="https://www.youtube.com/embed/Jt98dlAnT-c" frameborder="0" allowfullscreen></iframe>
-            <p class="dateArchive">12 novembre 2008</p>
-        </div>
-        </section>
-    </main>
+    <div class="divArchive textcenter">
+        <h4 class="titreDivArchive">AlloWin à Sadirac</h4>
+        <iframe class="imgArchive" src="https://www.youtube.com/embed/Jt98dlAnT-c" frameborder="0" allowfullscreen></iframe>
+        <p class="dateArchive">12 novembre 2008</p>
+    </div>
+    </section>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
