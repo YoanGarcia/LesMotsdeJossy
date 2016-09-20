@@ -101,17 +101,17 @@ var lien = document.querySelectorAll('.divEditTheme');
         });
 
 var check_vid = document.querySelector('#check_vid');
-        var vid =  document.querySelector('#link_vid');
-        var pic = document.querySelector('#picture_a');
+var vid =  document.querySelector('#link_vid');
+var pic = document.querySelector('#picture_a');
 
 
-        check_vid.addEventListener('click', function(){
-            if(check_vid.checked){
-                pic.style.display = 'none';
-                vid.style.display = 'inline';
-            }
-            else{
-                pic.style.display = 'inline';
-                vid.style.display = 'none';
-            }
-        });
+check_vid.addEventListener('click', function(){
+    if(check_vid.checked){
+        pic.style.display = 'none';
+        vid.style.display = 'inline';
+    }
+    else{
+        pic.style.display = 'inline';
+        vid.style.display = 'none';
+    }
+});
