@@ -161,7 +161,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `token`, `token_expire`) VALUES
-(1, 'admin', 'admin', '', '');
+(1, 'admin@admin.fr', 'admin', '', '');
 
 --
 -- Index pour les tables exportées
