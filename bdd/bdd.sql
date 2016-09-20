@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 18 Septembre 2016 à 13:32
+-- Généré le :  Mar 20 Septembre 2016 à 14:29
 -- Version du serveur :  10.1.10-MariaDB
 -- Version de PHP :  5.6.15
 
@@ -87,12 +87,12 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title`, `content`, `post_date`, `theme`, `img_link`, `hide`) VALUES
-(1, 'azes111111qsdqzaeazea ', 'teste 112', '0000-00-00 00:00:00', 'test', 'img/theme/test/test-1.jpg', 0),
-(2, 'testestset1111sesdfazeazea', 'qwqwqw', '0000-00-00 00:00:00', 'test', 'img/theme/test/test-2.jpg?t=1474022546?t=1474022561?t=1474022574?t=1474121344', 1),
-(3, 'azesqsdqzaeazea', 'zea222222222222222222222222222222zeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeaze', '0000-00-00 00:00:00', 'test2', 'http://lorempixel.com/500/500/', 0),
-(4, 'testestsetsesdfazeazea', 'zeazea2222222222222222222222222222222zeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeaze', '0000-00-00 00:00:00', 'test2', 'http://lorempixel.com/500/500/', 0),
-(5, 'azesqsdqzaeazea', 'zeazea333333333333333333zeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeaze', '0000-00-00 00:00:00', 'test3', 'http://lorempixel.com/500/500/', 0),
-(6, 'testestsetsesdfazeazea', 'zeazeazeazez3333333333333333333333333eazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeazezeazeazeaze', '0000-00-00 00:00:00', 'test3', 'http://lorempixel.com/500/500/', 0);
+(7, 'titre1', 'ea', '2016-09-19 16:21:00', 'acceuil', 'img/theme/acceuil/acceuil-7.jpg?t=1474302485?t=1474302571?t=1474302579?t=1474302582?t=1474302588', 0),
+(8, 'titre2', 'sopalin', '2016-09-19 16:21:00', 'acceuil', 'img/theme/acceuil/acceuil-8.jpg', 0),
+(9, 'titre3', 'chat pas contente', '2016-09-19 16:21:00', 'acceuil', 'img/theme/acceuil/acceuil-9.jpg?t=1474302404?t=1474302415?t=1474374406', 0),
+(10, 'titre4', 'aze', '2016-09-19 16:21:00', 'acceuil', '?t=1474301907?t=1474301972', 0),
+(11, 'titre5', 'contenu 5', '2016-09-19 16:21:00', 'acceuil', 'img/theme/acceuil/acceuil-11.jpg?t=1474301907?t=1474302213', 0),
+(12, 'titre6', 'contenu 6', '2016-09-19 16:21:00', 'acceuil', 'img/theme/acceuil/acceuil-12.jpg?t=1474302213?t=1474302251?t=1474374012?t=1474374019', 0);
 
 -- --------------------------------------------------------
 
@@ -136,7 +136,11 @@ CREATE TABLE `partenaires` (
 --
 
 INSERT INTO `partenaires` (`id`, `name`, `img`) VALUES
-(12, 'testaa', 'img/partenaire/testaa.jpg');
+(12, 'testaa', 'img/partenaire/testaa.jpg'),
+(13, '', 'aze'),
+(14, '', 'aze'),
+(15, 'parte12', 'img/partenaire/parte12.jpg'),
+(16, 'zezezeazeazeazeazeazeaze', 'img/partenaire/zezezeazeazeazeazeazeaze.jpg');
 
 -- --------------------------------------------------------
 
@@ -219,7 +223,7 @@ ALTER TABLE `agenda`
 -- AUTO_INCREMENT pour la table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT pour la table `newsletter`
 --
@@ -229,7 +233,7 @@ ALTER TABLE `newsletter`
 -- AUTO_INCREMENT pour la table `partenaires`
 --
 ALTER TABLE `partenaires`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT pour la table `users`
 --
