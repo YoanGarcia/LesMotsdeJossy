@@ -112,17 +112,24 @@
                 <h2>Les activités réalisées</h2>    
             </div>
 
-            <div class="divArchive textcenter">
-                <h4 class="titreDivArchive">AlloWin à Sadirac</h4>
-                <img src="../img/theme/theatre/theatre1.jpg" class="imgArchive">
-                <p class="dateArchive">12 novembre 2008</p>
-            </div>
 
-            <div class="divArchive textcenter">
-                <h4 class="titreDivArchive">AlloWin à Sadirac</h4>
-                <iframe class="imgArchive" src="https://www.youtube.com/embed/-Q7wUbtT9gk" frameborder="0" allowfullscreen></iframe>
-                <p class="dateArchive">12 novembre 2008</p>
-            </div>
+            <?php foreach ($activites as $activite): ?>
+                <?php if ($activite['type'] == 'video'): ?>
+                    <div class="divArchive textcenter">
+                        <h4 class="titreDivArchive"><?=$activite['title']?></h4>
+                        <iframe class="imgArchive" src="<?=$activite['link']?>" frameborder="0" allowfullscreen></iframe>
+                        <p class="dateArchive"><?=$activite['post_date']?></p>
+                    </div>
+                <?php elseif($activite['type'] == 'image'): ?>
+                    <div class="divArchive textcenter">
+                        <h4 class="titreDivArchive"><?=$activite['title']?></h4>
+                        <img src="../<?=$activite['link']?>" class="imgArchive">
+                        <p class="dateArchive"><?=$activite['post_date']?></p>
+                    </div>
+                <?php endif ?>
+            <?php endforeach ?>
+
+
         </section>
 
     </div>

@@ -33,19 +33,16 @@
                 }
 
                 if(isset($post['video'])){
-                    if($post['video'] == '1'){
+                    if($post['video'] == 'video'){
                         $type = 'video';
-                    }
-                    else{
-                        $type = 'image';
                     }
                 }
 
-                if($type = 'image'){
+                if($type == 'image'){
                     $link = $imageFinale;
                 }
-                elseif($type = 'video'){
-                    $link = $post['video'];
+                elseif($type == 'video'){
+                    $link = $post['link'];
                 }
 
                 $controller->addActivites($post['title'], $link, $post['theme'], $type);
@@ -143,7 +140,7 @@
             <input type="text" name="title" placeholder="Nom de l'activité">
             <input type="text" name="link" id="link_vid" style="display: none;">
             <input type="file" name="picture" id="picture_a"><br>
-            <input type="checkbox" name="video" id="check_vid" value="1">
+            <input type="checkbox" name="video" id="check_vid" value="video">
             <input type="submit" name="ajouter">
         </form>
 

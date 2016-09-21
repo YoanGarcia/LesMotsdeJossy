@@ -1,8 +1,12 @@
 <?php 
 	require_once 'controller.php';
 
-	$controller = new Controller();
+	$theme = 'acceuil';
 
-	$news = $controller->getNews('acceuil');
+	$controller = new Controller();
+	
+	$news = $controller->getNews($theme);
 	$numberNews = count($news);
+	
+	$activites = $controller->getActivites($theme)
 ?>

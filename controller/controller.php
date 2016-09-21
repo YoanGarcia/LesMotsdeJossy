@@ -5,6 +5,20 @@
 
     class Controller {
 
+        public function getActivites($theme){
+            global $bdd;
+
+            $re_getActivites = $bdd->prepare('SELECT * FROM activites WHERE theme = :theme ORDER BY post_date ASC');
+            $re_getActivites->bindValue(':theme', $theme);
+
+            if($re_getActivites->execute()){
+                return $re_getActivites->fetchall(PDO::FETCH_ASSOC);
+            }
+            else{
+                throw new Exception($re_getActivites->errorInfo()[2]);
+            }
+        }
+
         public function getNews($theme){
             global $bdd;
 

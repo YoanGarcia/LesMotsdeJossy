@@ -25,7 +25,7 @@
 		<?php if ($activite['type'] == 'video'): ?>
 			<iframe class="imgArchive" src="<?=$activite['link']?>" frameborder="0" allowfullscreen></iframe>
 		<?php else: ?>
-			<img src="../<?=$activite['link']?>?t=<?=time()?>">
+			<img src="../<?=$activite['link'].'?t='.time()?>">
 		<?php endif ?>
 		<p><?=$activite['post_date']?></p>
 		<button type="button" class="del_activite" data-theme="<?=$get['theme']?>" data-idActivite="<?=$activite['id']?>">Supprimer</button>
