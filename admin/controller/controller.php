@@ -79,10 +79,10 @@
         public function addActivites($title, $link, $theme, $type){
             global $bdd;
 
-            $re_addActivites = $bdd->prepare('INSERT INTO news (title, link, post_date, theme, type) VALUES (:title, :link, :post_date, :theme, :type)');
+            $re_addActivites = $bdd->prepare('INSERT INTO activites (title, link, post_date, theme, type) VALUES (:title, :link, :post_date, :theme, :type)');
             $re_addActivites->bindValue(':title', $title);
             $re_addActivites->bindValue(':link', $link);
-            $re_addActivites->bindValue(':post_date', date('W F Y', time()));
+            $re_addActivites->bindValue(':post_date', date('d F Y', time()));
             $re_addActivites->bindValue(':theme', $theme);
             $re_addActivites->bindValue(':type', $type);
 
@@ -98,13 +98,13 @@
             global $bdd;
 
             $re_del = $bdd->prepare('DELETE FROM '.$table.' WHERE id = :id');
-            $re_del->bindValue(':id', $title);
+            $re_del->bindValue(':id', $id);
 
-            if($re_addActivites->execute()){
+            if($re_del->execute()){
                 return true;
             }
             else{
-                throw new Exception($re_addActivites->errorInfo()[2]);
+                throw new Exception($re_del->errorInfo()[2]);
             }
         }
 
@@ -198,6 +198,19 @@
             else{
                 throw new Exception($re_getNewsletterSub->errorInfo()[2]);
             }
+        }
+
+        public function getPartenaires(){
+             global $bdd;
+
+             $re_getPartenaires = $bdd->prepare('SELECT * FROM partenaires');
+
+             if($re_getPartenaires->execute()){
+                 return $re_getPartenaires->fetchall(PDO::FETCH_ASSOC);
+             }
+             else{
+                 throw new Exception($re_getPartenaires->errorInfo()[2]);
+             }
         }
 
         public function sendMail($email, $msg){
