@@ -147,17 +147,6 @@
     </div>
 
     <section class="activite">
-    <div class="divArchive textcenter">
-        <h4 class="titreDivArchive">AlloWin à Sadirac</h4>
-        <img src="../img/theme/theatre/theatre1.jpg" class="imgArchive" width="300" height="150">
-        <p class="dateArchive">12 novembre 2008</p>
-    </div>
-
-    <div class="divArchive textcenter">
-        <h4 class="titreDivArchive">AlloWin à Sadirac</h4>
-        <iframe class="imgArchive" src="https://www.youtube.com/embed/Jt98dlAnT-c" frameborder="0" allowfullscreen></iframe>
-        <p class="dateArchive">12 novembre 2008</p>
-    </div>
     </section>
 
 
