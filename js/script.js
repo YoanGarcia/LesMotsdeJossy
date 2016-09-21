@@ -14,8 +14,31 @@ $('.newsletter').click(function(){
         if (inputValue === "") {     
             swal.showInputError("le champ ne doit pas être vide");     
             return false   
-        }      
-        swal("Vous ête bien inscrit", "", "success"); 
+        }    
+
+        //requete ajax puor ajoute l'abonné
+        var formData = new FormData();
+
+        formData.append("email", inputValue);
+        var request = new XMLHttpRequest();
+
+        request.open("POST", "controller/ajax/addSub.php");
+
+        request.onreadystatechange = function(){
+            if(request.readyState === XMLHttpRequest.DONE && request.status === 200) {
+                if(request.response == 'success'){
+                    swal("Vous ête bien inscrit", "", "success"); 
+                }
+                else if(request.response == 'errors'){
+                    swal("Vous éte deja inscrit", "", "error"); 
+                }
+                else if(request.response == 'invalid'){
+                    swal("Email invalide", "", "error"); 
+                }
+            }
+        };
+
+        request.send(formData);
     });
 });
 

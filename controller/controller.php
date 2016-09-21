@@ -37,14 +37,14 @@
 
             $result = [];
             $result['success'] = false;
-            $result['errors'] = [];
+            $result['errors'] = false;
 
             $re_emailExiste = $bdd->prepare('SELECT * FROM newsletter WHERE email = :email');
             $re_emailExiste->bindValue(':email', $email);
 
             if($re_emailExiste->execute()){
                 if($re_emailExiste->rowCount() > 0){
-                    $result['errors'][] = 'L\'email existe déja';
+                    $result['errors'] = true;
                     return $result;
                 }
             }
