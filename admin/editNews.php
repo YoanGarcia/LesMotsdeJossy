@@ -98,7 +98,7 @@
                 <input type="text" name="link" id="link_vid" style="display: none;">
                 <input type="file" class="form-control" name="picture" id="picture_a"><br>Vidéo
                 <input type="checkbox" name="video" id="check_vid" value="video">
-                <input type="submit" name="ajouter">
+                <input type="submit" class="btn_modif" name="ajouter">
             </form>
         </div>
         
