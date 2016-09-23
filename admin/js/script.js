@@ -6,8 +6,6 @@ var btn = function(){
     var btn_modif = document.querySelectorAll('.btn_modif');
     var del_activite = document.querySelectorAll('.del_activite');
 
-    console.log(del_activite);
-
     del_activite.forEach(function(value, index, array){
         value.addEventListener('click', function(){
             var id = this.getAttribute('data-idActivite');
@@ -90,7 +88,16 @@ var btn = function(){
 
 lien.forEach(function(value, index, array){
     value.addEventListener('click', function(){
-        document.querySelector('.input_theme').setAttribute('value', this.getAttribute('data-theme'));;
+        var theme = this.getAttribute('data-theme');
+
+        if(theme === 'acceuil'){
+            $('.').hide();
+        }
+        else{
+            $('.conteneuractivite').show();
+        }
+
+        document.querySelector('.input_theme').setAttribute('value', theme);
 
         var method = "GET",
             url = "controller/ajax/getNews.php?theme=" + this.getAttribute('data-theme');
