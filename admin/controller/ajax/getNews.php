@@ -23,6 +23,7 @@
 	<article class="new<?=$new['id']?> articleGetNews" data-theme="<?=$get['theme']?>">
 
 		<div class="divGetNews inlineblock">
+
 			<img src="../<?=$new['img_link']?>?t=<?=time()?>" class="imgGetNews">
 			<p class="contentnews"><?=$new['content']?></p>
 			<?php if ($new['hide'] == 1): ?>
@@ -31,6 +32,7 @@
 				<p class="phide" data-hide="0">News Visible</p>
 			<?php endif ?>
 			<button type="button" class="btn_modif" data-idNews="<?=$new['id']?>">Modifier</button>
+			
 		</div>
 
 	</article>

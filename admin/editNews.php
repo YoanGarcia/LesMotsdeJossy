@@ -82,6 +82,10 @@
         <section class="news">
         </section>
 
+    </div>
+
+    <div id="divActivite" class="container-fluid textcenter divContenuTheme2">
+
         <h2>activités</h2>
         <br><br>
         <div class="container divFormAddNews">
@@ -92,7 +96,7 @@
                 <input type="hidden" name="theme" class="input_theme" value="">
                 <input type="text" class="form-control" name="title" placeholder="Nom de l'activité">
                 <input type="text" name="link" id="link_vid" style="display: none;">
-                <input type="file" class="form-control" name="picture" id="picture_a"><br>
+                <input type="file" class="form-control" name="picture" id="picture_a"><br>Vidéo
                 <input type="checkbox" name="video" id="check_vid" value="video">
                 <input type="submit" name="ajouter">
             </form>
