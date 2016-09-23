@@ -75,7 +75,7 @@
         <a href="#" class="divEditTheme" data-theme="theatre">Theatre</a>
     </div>
 
-    <div class="container-fluid textcenter divContenuTheme">
+    <div id="divNews" class="container-fluid textcenter divContenuTheme">
 
         <h2>Slide</h2>
         <br><br>
