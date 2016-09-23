@@ -28,7 +28,7 @@ h3 {
 /* * * * * * * * * * FOND D'ECRAN * * * * * * * * * */
 
 .backThemeTheatre {
-	background: url("../img/background/theatre1.jpg") no-repeat center center fixed;
+	background: url("../img/background/theme/theatre1.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
 
