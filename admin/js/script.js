@@ -91,10 +91,10 @@ lien.forEach(function(value, index, array){
         var theme = this.getAttribute('data-theme');
 
         if(theme === 'acceuil'){
-            $('.').hide();
+            $('#divActivite').hide();
         }
         else{
-            $('.conteneuractivite').show();
+            $('#divActivite').show();
         }
 
         document.querySelector('.input_theme').setAttribute('value', theme);
