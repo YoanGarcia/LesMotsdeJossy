@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Modifier les Slides</title>
+    <title>Modifier les Slides / Activitées</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="fr">
     <meta name="author" content="Yoan Garcia, Alexis Meunier">
@@ -84,21 +84,24 @@
 
         <h2>activités</h2>
         <br><br>
-        <form method="post" enctype="multipart/form-data">
-            <input type="hidden" name="form" value="addActivite">
-            <input type="hidden" name="theme" class="input_theme" value="">
-            <input type="text" name="title" placeholder="Nom de l'activité">
-            <input type="text" name="link" id="link_vid" style="display: none;">
-            <input type="file" name="picture" id="picture_a"><br>
-            <input type="checkbox" name="video" id="check_vid" value="video">
-            <input type="submit" name="ajouter">
-        </form>
+        <div class="container divFormAddNews">
+            <form method="post" enctype="multipart/form-data" class="form-signin">
+                <h4 class="form-signin-heading">Ajouter une activité</h4>
+
+                <input type="hidden" name="form" value="addActivite">
+                <input type="hidden" name="theme" class="input_theme" value="">
+                <input type="text" class="form-control" name="title" placeholder="Nom de l'activité">
+                <input type="text" name="link" id="link_vid" style="display: none;">
+                <input type="file" class="form-control" name="picture" id="picture_a"><br>
+                <input type="checkbox" name="video" id="check_vid" value="video">
+                <input type="submit" name="ajouter">
+            </form>
+        </div>
+        
+        <section class="activite">
+        </section>
 
     </div>
-
-    <section class="activite">
-    </section>
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

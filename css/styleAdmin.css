@@ -100,3 +100,69 @@
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+
+.activite {
+	border: 5px solid #7C07A9;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.divFormAddNews {
+	width: 350px;
+}
+
+.divGetNews {
+	background: white;
+	border: 2px solid #098F9B;
+	border-radius: 8px;
+	width: 220px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.imgGetNews {
+	width: 200px;
+	height: 140px;
+}
+
+.articleGetNews {
+	width: 260px;
+	display: inline-block;
+}
+
+.btn_modif {
+	background: white;
+	color: #098F9B;
+}
+
+.btn_modif:hover {
+	background: #098F9B;
+	color: white;
+}
+
+.divGetActivite {
+	background: white;
+	border: 2px solid #098F9B;
+	border-radius: 8px;
+	width: 320px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.imgArchive {
+	width: 300px;
+	height: 150px;
+}
+
+.btn_activite {
+	background: white;
+	color: #098F9B;
+}
+
+.btn_activite:hover {
+	background: #098F9B;
+	color: white;
+}
