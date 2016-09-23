@@ -46,7 +46,7 @@ var btn = function(){
             }
 
             document.querySelector('.new'+ newID).innerHTML = '' +
-            '<img id="preview" src="'+ img_link + '"><br>' +
+            '<img id="preview" class="imgEditSlide" src="'+ img_link + '"><br>' +
             '<form method="POST" enctype="multipart/form-data" class="form_modif">'+
                 '<label for="img_link">Image</label>' +
                 '<input type="hidden" name="ajax" value="ajax">' +
@@ -55,9 +55,9 @@ var btn = function(){
                 '<input type="hidden" name="img" value="'+ img_link.replace("../", "") +'">' +
                 '<input type="file" name="picture" id="picture"><br>' +
                 '<label for="content">Contenu</label><br>' +
-                '<textarea id="content" name="content" rows="10" cols="50">' + content + '</textarea><br>' +
-                '<input type="checkbox" name="hide" value="1" '+ hide_checked +'>' +
-                '<input type="submit" value="Valider">' + 
+                '<textarea id="content" name="content" rows="10" cols="30">' + content + '</textarea><br>' +
+                '<input type="checkbox" name="hide" value="1" '+ hide_checked +'>Non visible<br>' +
+                '<input type="submit" class="btn_modif" value="Valider">' + 
             '</form>';
 
             var img_new = document.querySelector('.new'+ newID +' #picture');
