@@ -11,84 +11,84 @@
             <a class="inlineblock" href="vue/theatre.php">
                 <div class="divTheme">
                     <h3>Théâtre</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>A partir de 4 ans</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/as.php">
                 <div class="divTheme themeAs">
                     <h3>Accompagnement à la scolarité</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>Primaire et collège</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/manif.php">
                 <div class="divTheme themeManif">
                     <h3>Manifestations culturelles</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>Tout public</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/animretraite.php">
                 <div class="divTheme themeAnimretraite">
                     <h3>Animation en maison de retraite</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>Seniors</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/filkidi.php">
                 <div class="divTheme themeFilkidi">
                     <h3>Filkidi</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>18 mois à 6 ans</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/reaap.php">
                 <div class="divTheme themeReaap">
                     <h3>REAAP</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>La famille</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/tap.php">
                 <div class="divTheme themeTap">
                     <h3>Temps d'activités périscolaires</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>3 à 11 ans</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/francais.php">
                 <div class="divTheme themeFrancais">
                     <h3>Lire, écrire, parler le français</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>Enfants et adultes</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/animspe.php">
                 <div class="divTheme themeAnimspe">
                     <h3>Etablissements spécialisés</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>Enfants et adultes</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/cocciabeille.php">
                 <div class="divTheme themeCocciabeille">
                     <h3>Coccinelles et abeilles</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>Enfants porteurs de handicap</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/pp.php">
                 <div class="divTheme themePp">
                     <h3>Printemps des Poètes</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>Pour tous</p>
                 </div>
             </a>
             <a class="inlineblock" href="vue/etpuis.php">
                 <div class="divTheme themeEtpuis">
                     <h3>Et puis</h3>
-                    <img src="img/theme/theatre/theatre1.jpg" class="themeTheatre">
+                    <img src="img/background/theatre1.jpg" class="themeTheatre">
                     <p>Pour tous</p>
                 </div>
             </a>
