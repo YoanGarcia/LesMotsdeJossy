@@ -1,9 +1,12 @@
 <?php 
 	require_once 'controller.php';
 
+	$theme = 'pp';
+
 	$controller = new Controller();
-
-	$news = $controller->getNews('pp');
-
-	$agenda = $controller->getAgenda('pp');
+	
+	$news = $controller->getNews($theme);
+	$numberNews = count($news);
+	
+	$activites = $controller->getActivites($theme)
 ?>

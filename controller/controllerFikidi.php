@@ -1,9 +1,12 @@
 <?php 
 	require_once 'controller.php';
 
+	$theme = 'fikidi';
+
 	$controller = new Controller();
-
-	$news = $controller->getNews('fikidi');
-
-	$agenda = $controller->getAgenda('fikidi');
+	
+	$news = $controller->getNews($theme);
+	$numberNews = count($news);
+	
+	$activites = $controller->getActivites($theme)
 ?>

@@ -1,9 +1,12 @@
 <?php 
 	require_once 'controller.php';
 
+	$theme = 'cocci';
+
 	$controller = new Controller();
-
-	$news = $controller->getNews('cocciabeille');
-
-	$agenda = $controller->getAgenda('cocciabeille');
+	
+	$news = $controller->getNews($theme);
+	$numberNews = count($news);
+	
+	$activites = $controller->getActivites($theme)
 ?>

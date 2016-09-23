@@ -1,7 +1,7 @@
 <?php 
 	require_once 'controller.php';
 
-	$theme = 'acceuil';
+	$theme = 'theatre';
 
 	$controller = new Controller();
 	

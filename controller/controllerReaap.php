@@ -1,9 +1,12 @@
 <?php 
 	require_once 'controller.php';
 
+	$theme = 'reaap';
+
 	$controller = new Controller();
-
-	$news = $controller->getNews('reaap');
-
-	$agenda = $controller->getAgenda('reaap');
+	
+	$news = $controller->getNews($theme);
+	$numberNews = count($news);
+	
+	$activites = $controller->getActivites($theme)
 ?>
