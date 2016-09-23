@@ -1,6 +1,9 @@
+$('#divNews').hide();
+$('#divActivite').hide();
 var lien = document.querySelectorAll('.divEditTheme');
 var xhr = new XMLHttpRequest();
 var xhr2 = new XMLHttpRequest();
+
 
 var btn = function(){
     var btn_modif = document.querySelectorAll('.btn_modif');
@@ -90,6 +93,8 @@ lien.forEach(function(value, index, array){
     value.addEventListener('click', function(){
         var theme = this.getAttribute('data-theme');
 
+        $('#divNews').show();
+        
         if(theme === 'acceuil'){
             $('#divActivite').hide();
         }
