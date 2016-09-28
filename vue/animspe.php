@@ -1,5 +1,5 @@
 <?php 
-    require_once '../controller/controllerAnimSpe.php';
+    require_once '../controller/controllerTheatre.php';
 ?>
 <!DOCTYPE html>
 
@@ -135,34 +135,27 @@
     </div>
 
     <!-- Footer -->
-    <footer>
 
-        <div class="container-fluid textcenter">
-            
-            <div class="col-lg-2"></div>
+    <div class="col-lg-2 divFooterGauche"></div>
 
-            <div class="col-lg-4">
-                <h4 class="titreFooter">Les Mots de Jossy</h4>
-                
-                <br><i class="fa fa-map-marker" aria-hidden="true"></i> BP 12 - 33670 Sadirac
-                <br><i class="fa fa-phone-square" aria-hidden="true"></i> 06 30 76 20 13
-                <br><i class="fa fa-envelope-square" aria-hidden="true"></i> lesmotsdejossy@orange.fr
-                
-                <br><br><p>Copyright 2016 &copy; LesMotsdeJossy</p>
-            </div>
+    <div class="col-lg-4 textcenter divFooter">
+        <h4 class="titreFooter">Les Mots de Jossy</h4>
+        
+        <br><i class="fa fa-map-marker" aria-hidden="true"></i> BP 12 - 33670 Sadirac
+        <br><i class="fa fa-phone-square" aria-hidden="true"></i> 06 30 76 20 13
+        <br><i class="fa fa-envelope-square" aria-hidden="true"></i> lesmotsdejossy@orange.fr
+        
+        <br><br><p>Copyright 2016 &copy; LesMotsdeJossy</p>
+    </div>
 
-            <div class="col-lg-4">
-                <h4>Tenez-vous au courant</h4>
-                
-                <br><a href="https://www.facebook.com/laurent.garcia.7967?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+    <div class="col-lg-4 divFooter">
+        <h4>Tenez-vous au courant</h4>
+        
+        <br><a href="https://www.facebook.com/laurent.garcia.7967?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
 
-            </div>
+    </div>
 
-            <div class="col-lg-2"></div>
-
-        </div>
-
-    </footer>
+    <div class="col-lg-2 divFooterDroite"></div>
 
     <!-- JS personnalisé -->
     <script src="../js/script.js"></script>

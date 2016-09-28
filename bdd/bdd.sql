@@ -143,6 +143,18 @@ CREATE TABLE `partenaires` (
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `amis`
+--
+
+CREATE TABLE `amis` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `users`
 --
 

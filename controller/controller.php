@@ -46,6 +46,19 @@
              }
         }
 
+        public function getAmis(){
+             global $bdd;
+
+             $re_getAmis = $bdd->prepare('SELECT * FROM amis');
+
+             if($re_getAmis->execute()){
+                 return $re_getAmis->fetchall(PDO::FETCH_ASSOC);
+             }
+             else{
+                 throw new Exception($re_getAmis->errorInfo()[2]);
+             }
+        }
+
         public function addNewsletterSub($email){
             global $bdd;
 

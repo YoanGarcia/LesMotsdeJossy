@@ -61,12 +61,14 @@
 	color: #7C07A9;
 	border: 3px solid #7C07A9;
 	border-radius: 15px;
+	margin-left: 70px;
+	margin-right: 70px;
 }
 
 .divChoix:hover {
 	background: #7C07A9;
 	color: white;
-	border: 3px solid white;
+	border: 3px solid transparent;
 }
 
 /* * * * * * * * * * NEWS * * * * * * * * * */
@@ -116,6 +118,34 @@
 
 .divFormAddNews {
 	width: 350px;
+}
+
+/* * * * * * * * * * PARTENAIRE * * * * * * * * * */
+
+.formAddPartenaire {
+	border: 3px solid #7C07A9;
+	border-radius: 12px;
+	padding: 5px;
+}
+
+.divAddPartenaire {
+	margin-top: 70px;
+	display: inline-block;
+}
+
+.divPartenaire {
+	display: inline-block;
+	margin: 5px;
+	border: 1px solid #7C07A9;
+	background: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 8px;
+}
+
+.imgPartenaire {
+	width: 170px;
+	height: 100px;
 }
 
 /* * * * * * * * * * AJAX * * * * * * * * * */

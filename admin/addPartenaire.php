@@ -59,9 +59,9 @@
         <br><br><br><br>
     </div>
     
-    <div class="col-lg-3"></div>
+    <div class="col-lg-5"></div>
 
-    <div class="col-lg-6">
+    <div class="col-lg-2 formAddPartenaire">
     	
 	    <form method="post" enctype="multipart/form-data">
             <input type="hidden" name="form" value="add">
@@ -72,10 +72,15 @@
 
     </div>
 
-	<div class="col-lg-3">
+    <div class="col-lg-5"></div>
+
+	<div class="col-lg-12 divAddPartenaire inlineblock">
+
         <?php $partenaires = $controller->getPartenaires(); ?>
+
         <?php foreach ($partenaires as $partenaire): ?>
-            <div class="divPartenaire textcenter">
+
+            <div class="divPartenaire textcenter inlineblock">
                 <h4 class="titrePartenaire"><?=$partenaire['name']?></h4>
                 <img src="../<?=$partenaire['img']?>" class="imgPartenaire">
                 <form method="post">
@@ -84,7 +89,9 @@
                     <input type="submit" value="Suprimmer">
                 </form>
             </div>
-        <?php endforeach ?>   
+            
+        <?php endforeach ?>
+
     </div>
 
     <!-- Bootstrap core JavaScript

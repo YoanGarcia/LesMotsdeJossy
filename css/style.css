@@ -219,7 +219,62 @@ h3 {
 	margin: 6px 11px 6px 11px;
 }
 
+.divPartenaire:hover {
+	text-decoration: none;
+	cursor: pointer;
+	border: 3px solid transparent;
+	width: 150px;
+	height: 150px;
+	box-shadow: 5px 5px 1px;
+}
+
 .imgPartenaire {
+	width: 100px;
+	height: 100px;
+}
+
+/* * * * * * * * * * AMIS * * * * * * * * * */
+
+.amis {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.titreSectionAmis {
+	color: #098F9B;
+	background: white;
+	border-radius: 60px 60px 0px 0px;
+	margin-left: 26%;
+	margin-right: 26%;
+}
+
+.titreAmis {
+	color: #7C07A9;
+	background: white;
+	padding: 0px 5px 0px 5px;
+	border-radius: 20px;
+}
+
+.divAmis {
+	display: inline-block;
+	background: white;
+	border: 3px solid #7C07A9;
+	border-radius: 15px;
+	width: 150px;
+	height: 150px;
+	margin: 6px 11px 6px 11px;
+}
+
+.divPartenaire:amis {
+	text-decoration: none;
+	cursor: pointer;
+	border: 3px solid transparent;
+	width: 150px;
+	height: 150px;
+	box-shadow: 5px 5px 1px;
+}
+
+.imgAmis {
 	width: 100px;
 	height: 100px;
 }

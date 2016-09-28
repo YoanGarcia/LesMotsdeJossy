@@ -60,19 +60,9 @@
         <br><br><br><br>
     </div>
     
-    <div class="container-fluid">
+    <div class="container-fluid textcenter">
 
         <?php if ($connected): ?>
-
-        <div class="col-lg-2"></div>
-
-        <a href="editNews.php">
-            <div class="col-lg-3 divChoix textcenter">
-                <h2>Modifier un thème</h2>
-            </div>
-        </a>
-
-        <div class="col-lg-2"></div>
 
         <a href="addPartenaire.php">
             <div class="col-lg-3 divChoix textcenter">
@@ -80,7 +70,17 @@
             </div>
         </a>
 
-        <div class="col-lg-2"></div>
+        <a href="editNews.php">
+            <div class="col-lg-3 divChoix textcenter">
+                <h2>Modifier un thème</h2>
+            </div>
+        </a>
+
+        <a href="addAmis.php">
+            <div class="col-lg-3 divChoix textcenter">
+                <h2>Ajouter un amis</h2>
+            </div>
+        </a>
 
         <?php else: ?>
 

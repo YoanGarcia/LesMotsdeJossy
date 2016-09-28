@@ -195,10 +195,26 @@
     </div>
 
     <?php foreach ($partenaires as $partenaire): ?>
-        <div class="divPartenaire textcenter">
+        <a href="#" class="divPartenaire textcenter">
             <h4 class="titrePartenaire"><?=$partenaire['name']?></h4>
             <img src="<?=$partenaire['img']?>" class="imgPartenaire">
-        </div>
+        </a>
+    <?php endforeach ?>
+
+</section>
+
+<!-- Section Amis -->
+<section id="amis" class="amis container-fluid inlineblock">
+    
+    <div class="titreSectionAmis textcenter">
+        <h2>Nos Amis</h2>    
+    </div>
+
+    <?php foreach ($amis as $ami): ?>
+        <a class="divAmis textcenter">
+            <h4 class="titreAmis"><?=$ami['name']?></h4>
+            <img src="<?=$ami['img']?>" class="imgAmis">
+        </a>
     <?php endforeach ?>
 
 </section>
