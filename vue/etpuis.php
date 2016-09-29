@@ -66,7 +66,8 @@
             <div class="titreNews textcenter">
                 <h2>Les rendez-vous à ne pas manquer</h2>
             </div>
-            <div id="myCarousel" class="carouselVue slide col-lg-7" data-ride="carousel">
+            <div class="col-lg-1"></div>
+            <div id="myCarousel" class="carousel slide col-lg-10" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <?php for ($i=0; $i < $numberNews; $i++): ?> 
