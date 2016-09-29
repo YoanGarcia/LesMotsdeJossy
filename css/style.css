@@ -92,6 +92,18 @@ h3 {
 
 /* * * * * * * * * * NEWS * * * * * * * * * */
 
+
+/* News - contenu */
+
+.content{
+	background-color: white;
+	width: 64%;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+
+/* News - contenu */
+
 .titreNews {
 	color: #098F9B;
 	background: white;

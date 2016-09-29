@@ -81,13 +81,13 @@
                         <?php if ($first): ?>
                             <div class="item active">
                                 <img src="../<?=$new['img_link']?>" class="imgSlide">
-                                <p><?=$new['content']?></p>
+                                <p class="content textcenter"><?=$new['content']?></p>
                             </div>
                             <?php $first = false;?>                    
                         <?php else: ?>
                             <div class="item">
                                 <img src="../<?=$new['img_link']?>" class="imgSlide">
-                                <p><?=$new['content']?></p>
+                                <p class="content textcenter"><?=$new['content']?></p>
                             </div>
                         <?php endif ?>
                     <?php endforeach ?>

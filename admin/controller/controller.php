@@ -61,6 +61,21 @@
             }
         }
 
+        public function addAmis($name, $img){
+            global $bdd;
+
+            $re_addAmis = $bdd->prepare('INSERT INTO amis (name, img) VALUES (:name, :img)');
+            $re_addAmis->bindValue(':name', $name);
+            $re_addAmis->bindValue(':img', $img);
+
+            if($re_addAmis->execute()){
+                return true;
+            }
+            else{
+                throw new Exception($re_addAmis->errorInfo()[2]);
+            }
+        }
+
         public function addPartenaire($name, $img){
             global $bdd;
 
@@ -210,6 +225,19 @@
              }
              else{
                  throw new Exception($re_getPartenaires->errorInfo()[2]);
+             }
+        }
+
+        public function getAmis(){
+             global $bdd;
+
+             $re_getAmis = $bdd->prepare('SELECT * FROM amis');
+
+             if($re_getAmis->execute()){
+                 return $re_getAmis->fetchall(PDO::FETCH_ASSOC);
+             }
+             else{
+                 throw new Exception($re_getAmis->errorInfo()[2]);
              }
         }
 

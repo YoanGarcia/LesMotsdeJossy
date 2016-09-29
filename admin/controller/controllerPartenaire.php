@@ -21,7 +21,7 @@
                         $newFileName = explode('.', $fileName);
                         $fileExtension = end($newFileName); // Récupère l'extension du fichier
 
-                        $finalFileName = $post['nom'].'.'.$fileExtension;
+                        $finalFileName = $post['nom'].'-'.time().'.'.$fileExtension;
 
                         if(move_uploaded_file($fileTemp, $folder.$finalFileName)) {
                             // Ici je suis sur que mon image est au bon endroit

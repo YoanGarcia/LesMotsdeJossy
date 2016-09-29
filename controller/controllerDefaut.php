@@ -12,6 +12,7 @@
     $success['newsletter'] = false;
 
     $partenaires = $controller->getPartenaires();
+    $amis = $controller->getAmis();
     $news = $controller->getNews('acceuil');
     $numberNews = count($news);
 
