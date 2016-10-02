@@ -96,6 +96,16 @@
     </div>
 </nav>
 
+<!-- Section Info -->
+<section id="info" class="info container-fluid">
+    
+    <div class="textcenter">
+        <h2 class="titreInfo">Qui sommes nous et que faisons-nous ?</h2>
+        <iframe width="700" height="394" class="videoYT" src="https://www.youtube.com/embed/-Q7wUbtT9gk" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+</section>
+
 <!-- Section News -->
 <section id="news" class="news">
     <div class="titreNews textcenter">
@@ -117,13 +127,13 @@
                 <?php if ($first): ?>
                     <div class="item active">
                         <img src="<?=$new['img_link']?>" class="imgSlide">
-                        <p class="content textcenter"><?=$new['content']?></p>
+                        <p class="content textcenter descSlide"><?=$new['content']?></p>
                     </div>
                     <?php $first = false;?>                    
                 <?php else: ?>
                     <div class="item">
                         <img src="<?=$new['img_link']?>" class="imgSlide">
-                        <p class="content textcenter"><?=$new['content']?></p>
+                        <p class="content textcenter descSlide"><?=$new['content']?></p>
                     </div>
                 <?php endif ?>
             <?php endforeach ?>
@@ -136,16 +146,6 @@
             <a class="newsletter">Notre newsletter</a>
         </h2>
     </div>
-</section>
-
-<!-- Section Info -->
-<section id="info" class="info container-fluid">
-    
-    <div class="textcenter">
-        <h2 class="titreInfo">Qui sommes nous et que faisons-nous ?</h2>
-        <iframe width="700" height="394" class="videoYT" src="https://www.youtube.com/embed/-Q7wUbtT9gk" frameborder="0" allowfullscreen></iframe>
-    </div>
-
 </section>
 
 <!-- Contact -->
@@ -211,7 +211,7 @@
     </div>
 
     <?php foreach ($amis as $ami): ?>
-        <a class="divAmis textcenter">
+        <a href="#" class="divAmis textcenter">
             <h4 class="titreAmis"><?=$ami['name']?></h4>
             <img src="<?=$ami['img']?>" class="imgAmis">
         </a>
