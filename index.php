@@ -195,7 +195,7 @@
     </div>
 
     <?php foreach ($partenaires as $partenaire): ?>
-        <a href="#" class="divPartenaire textcenter">
+        <a href="<?=$partenaire['site'];?>" class="divPartenaire textcenter">
             <h4 class="titrePartenaire"><?=$partenaire['name']?></h4>
             <img src="<?=$partenaire['img']?>" class="imgPartenaire">
         </a>
@@ -211,7 +211,7 @@
     </div>
 
     <?php foreach ($amis as $ami): ?>
-        <a href="#" class="divAmis textcenter">
+        <a href="<?=$ami['site'];?>" class="divAmis textcenter">
             <h4 class="titreAmis"><?=$ami['name']?></h4>
             <img src="<?=$ami['img']?>" class="imgAmis">
         </a>

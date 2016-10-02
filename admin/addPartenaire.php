@@ -65,8 +65,9 @@
     	
 	    <form method="post" enctype="multipart/form-data">
             <input type="hidden" name="form" value="add">
-			<input type="text" name="nom" placeholder="Nom du partenaire"><br><br>
-			<input type="file" name="picture" id="picture"><br>
+            <input type="text" name="nom" placeholder="Nom du partenaire" required><br><br>
+            <input type="file" name="picture" id="picture" required><br>
+			<input type="url" name="site" placeholder="Site du partenaire" required><br>
 			<input type="submit" value="valider">
 		</form>
 

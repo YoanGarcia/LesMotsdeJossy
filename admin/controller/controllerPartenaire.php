@@ -30,7 +30,7 @@
                     }
                 }
 
-                $controller->addPartenaire($post['nom'], $imageFinale);
+                $controller->addPartenaire($post['nom'], $imageFinale, $post['site']);
             }
             if($post['form'] == 'delete'){
                 $controller->delete('partenaires', $post['id']);

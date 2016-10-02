@@ -61,12 +61,13 @@
             }
         }
 
-        public function addAmis($name, $img){
+        public function addAmis($name, $img, $site){
             global $bdd;
 
-            $re_addAmis = $bdd->prepare('INSERT INTO amis (name, img) VALUES (:name, :img)');
+            $re_addAmis = $bdd->prepare('INSERT INTO amis (name, img, site) VALUES (:name, :img, :site)');
             $re_addAmis->bindValue(':name', $name);
             $re_addAmis->bindValue(':img', $img);
+            $re_addAmis->bindValue(':site', $site);
 
             if($re_addAmis->execute()){
                 return true;
@@ -76,12 +77,13 @@
             }
         }
 
-        public function addPartenaire($name, $img){
+        public function addPartenaire($name, $img, $site){
             global $bdd;
 
-            $re_addPartenaire = $bdd->prepare('INSERT INTO partenaires (name, img) VALUES (:name, :img)');
+            $re_addPartenaire = $bdd->prepare('INSERT INTO partenaires (name, img, site) VALUES (:name, :img, :site)');
             $re_addPartenaire->bindValue(':name', $name);
             $re_addPartenaire->bindValue(':img', $img);
+            $re_addPartenaire->bindValue(':site', $site);
 
             if($re_addPartenaire->execute()){
                 return true;

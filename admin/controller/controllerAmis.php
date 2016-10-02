@@ -30,7 +30,7 @@
                     }
                 }
 
-                $controller->addAmis($post['nom'], $imageFinale);
+                $controller->addAmis($post['nom'], $imageFinale, $post['site']);
             }
             if($post['form'] == 'delete'){
                 $controller->delete('amis', $post['id']);

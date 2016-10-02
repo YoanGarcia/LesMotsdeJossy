@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 22 Septembre 2016 à 01:38
+-- Généré le :  Dim 02 Octobre 2016 à 16:37
 -- Version du serveur :  10.1.10-MariaDB
 -- Version de PHP :  5.6.15
 
@@ -40,7 +40,35 @@ CREATE TABLE `activites` (
 --
 
 INSERT INTO `activites` (`id`, `title`, `link`, `post_date`, `type`, `theme`) VALUES
-(55, 'video 1', 'https://www.youtube.com/embed/y2KHqSXtEDc', '22 September 2016', 'video', 'retraite');
+(55, 'video 1', 'https://www.youtube.com/embed/y2KHqSXtEDc', '22 September 2016', 'video', 'retraite'),
+(56, 'azeazeaze', 'https://www.youtube.com/embed/H7v6yljnGJc', '02 October 2016', 'video', 'retraite');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `amis`
+--
+
+CREATE TABLE `amis` (
+  `id` int(11) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `site` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `amis`
+--
+
+INSERT INTO `amis` (`id`, `img`, `name`, `site`) VALUES
+(23, 'img/amis/-1475125900.jpg', '', ''),
+(24, 'img/amis/-1475125903.jpg', '', ''),
+(25, 'img/amis/-1475125906.jpg', '', ''),
+(26, 'img/amis/-1475125913.jpg', '', ''),
+(27, 'img/amis/-1475125924.jpg', '', ''),
+(28, 'img/amis/-1475125930.jpg', '', ''),
+(29, 'img/amis/azeaze-1475418437.gif', 'azeaze', ''),
+(30, 'img/amis/google-1475418910.gif', 'google', 'https://www.google.fr/');
 
 -- --------------------------------------------------------
 
@@ -137,20 +165,16 @@ CREATE TABLE `newsletter` (
 CREATE TABLE `partenaires` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `img` varchar(255) NOT NULL
+  `img` varchar(255) NOT NULL,
+  `site` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
 --
--- Structure de la table `amis`
+-- Contenu de la table `partenaires`
 --
 
-CREATE TABLE `amis` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `img` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `partenaires` (`id`, `name`, `img`, `site`) VALUES
+(7, 'wikipedia', 'img/partenaire/wikipedia-1475419020.png', 'https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal');
 
 -- --------------------------------------------------------
 
@@ -181,6 +205,12 @@ INSERT INTO `users` (`id`, `email`, `password`, `token`, `token_expire`) VALUES
 -- Index pour la table `activites`
 --
 ALTER TABLE `activites`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `amis`
+--
+ALTER TABLE `amis`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -217,7 +247,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `activites`
 --
 ALTER TABLE `activites`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+--
+-- AUTO_INCREMENT pour la table `amis`
+--
+ALTER TABLE `amis`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 --
 -- AUTO_INCREMENT pour la table `news`
 --
@@ -227,12 +262,12 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT pour la table `newsletter`
 --
 ALTER TABLE `newsletter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `partenaires`
 --
 ALTER TABLE `partenaires`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT pour la table `users`
 --

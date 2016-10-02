@@ -1,5 +1,5 @@
 <?php 
-    require_once '../controller/controllerTheatre.php';
+    require_once '../controller/controllerManif.php';
 ?>
 <!DOCTYPE html>
 
